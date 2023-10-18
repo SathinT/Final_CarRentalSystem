@@ -1,0 +1,37 @@
+
+.custom-button {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    /*background-image: url('../assests/img/gallery/gallery-9.jpg');*/
+    background-size: cover;
+    width: 61%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    left: 0px;
+    height: 256px;
+    top: -4px;
+    display: block;
+}
+
+.custom-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0 0 0), #000000a8);
+}
+h2{
+    font-size: 120px;
+    left: -11px;
+    top: 30px;
+    position: relative;
+    display: flex;
+    font-family: Impact;
+    color: #e21e800f;
+    -webkit-text-stroke: 4px #d63b85;
+}
+
