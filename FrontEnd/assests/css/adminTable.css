@@ -3,6 +3,12 @@ body,
 .intro {
     height: 100%;
 }
+.intro h1{
+    position: relative;
+    left: 106px;
+    top: 327px;
+    font-weight: bold;
+}
 
 table td,
 table th {
@@ -19,18 +25,18 @@ table th {
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
     width: 1150px;
-    position: relative;
+    position: absolute;
     left: -170px;
-    top: -151px;
+    top: -135px;
 }
 
 /*slide*/
 #slide {
     width: 304px;
     height: 644px;
-    position: relative;
-    left: 1211px;
-    top: -694px;
+    position: absolute;
+    left: 1585px;
+    top: 258px;
 }
 
 #slide img {
