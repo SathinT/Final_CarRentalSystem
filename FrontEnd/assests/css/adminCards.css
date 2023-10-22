@@ -1,0 +1,164 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1146px;
+    top: -153px;
+    position: relative;
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.cards .red {
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.70);
+}
+
+.cards .blue {
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.70);
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 170px;
+    width: 188px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.cards .card p.tip {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.cards .card p.second-text {
+    font-size: 85px;
+}
+
+.cards .card:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+
+/*TimeCard*/
+
+.Timecard {
+    width: 280px;
+    height: 150px;
+    background: rgb(17, 4, 134);
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 5px 10px 50px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    left: 1314px;
+    top: 24px;
+
+    animation: backgroundChange 16s cubic-bezier(0.4, 2.25, 0.75, 1) infinite alternate;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+    }
+    10% {
+        background: linear-gradient(to right, rgb(23, 34, 54), rgb(42, 66, 96));
+    }
+    20% {
+        background: linear-gradient(to right, rgb(27, 41, 61), rgb(48, 74, 108));
+    }
+    30% {
+        background: linear-gradient(to right, rgb(33, 49, 72), rgb(56, 84, 120));
+    }
+    40% {
+        background: linear-gradient(to right, rgb(40, 58, 84), rgb(66, 96, 136));
+    }
+    50% {
+        background: linear-gradient(to right, rgb(45, 70, 98), rgb(76, 108, 152));
+    }
+    60% {
+        background: linear-gradient(to right, rgb(40, 58, 84), rgb(66, 96, 136));
+    }
+    70% {
+        background: linear-gradient(to right, rgb(33, 49, 72), rgb(56, 84, 120));
+    }
+    80% {
+        background: linear-gradient(to right, rgb(27, 41, 61), rgb(48, 74, 108));
+    }
+    90% {
+        background: linear-gradient(to right, rgb(23, 34, 54), rgb(42, 66, 96));
+    }
+    100% {
+        background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+    }
+}
+
+.Timecard:hover {
+    box-shadow: rgb(0,0,0) 5px 10px 50px ,rgb(0,0,0) -5px 0px 250px;
+}
+
+.time-text {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    transition: color 0.5s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.Timecard:hover .time-text {
+    color: white;
+}
+
+.time-sub-text {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.day-text {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.moon {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Timecard:hover > .moon {
+    font-size: 23px;
+}

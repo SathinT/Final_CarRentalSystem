@@ -1,0 +1,184 @@
+body{
+    background-image: url("../images/Cars/bgregi.jpg");
+    overflow: hidden;
+}
+.registration-container {
+    max-width: 680px;
+    max-height: 890px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: -600px;
+    top: -9px;
+}
+
+.registration-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-header h1 {
+    font-size: 26px;
+    position: relative;
+    top: -23px;
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #ffffff;
+    position: relative;
+    top: -36px;
+    left: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    left: 50px;
+    top: -32px;
+    background-color: #adadad;
+}
+
+textarea {
+    height: 30px;
+}
+
+.btn-register {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    left: 288px;
+    top: -23px;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+}
+
+/* Style for file input (upload photo) */
+input[type="file"] {
+    font-size: 14px;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    left: 50px;
+    top: -23px
+}
+
+input[type="file"]:hover {
+    background: linear-gradient(135deg, #1acff6 0%, #d63b85 100%);
+}
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, #1acff6 0%, #d63b85 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #000000;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    background: #015BFFFF;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    left: 48px;
+    top: -13px
+}
+
+button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background: -webkit-linear-gradient(315deg, #1acff6 0%, #d63b85 100%);
+    z-index: -1;
+}
+
+button:hover, button:focus {
+    color: #000000;
+}
+
+button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+/*#bgImg2{*/
+/*    position: relative;*/
+/*    top: -87px;*/
+/*    left: -199px;*/
+/*    width: 804px;*/
+/*    height: 553px;*/
+/*}*/
+#bgImg3{
+    position: relative;
+    top: -408px;
+    left: 579px;
+    width: 820px;
+    height: 362px;
+}
+#logtxt{
+    position: relative;
+    top: -83px;
+    left: 417px;
+    font-weight: bolder;
+    color: wheat;
+    font-size: 19px;
+}
+#logredirect{
+    position: relative;
+    top: -100px;
+    left: 443px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #1ACFF6FF;
+}
+#logredirect:hover{
+    color: #d63b85;
+}
