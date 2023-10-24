@@ -5,8 +5,8 @@ body,
 }
 .intro h1{
     position: relative;
-    left: 106px;
-    top: 327px;
+    left: 90px;
+    top: -66px;
     font-weight: bold;
 }
 
@@ -26,8 +26,8 @@ table th {
     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
     width: 1150px;
     position: absolute;
-    left: -170px;
-    top: -135px;
+    left: -181px;
+    top: -111px;
 }
 
 /*slide*/
@@ -35,11 +35,23 @@ table th {
     width: 304px;
     height: 644px;
     position: absolute;
-    left: 1585px;
-    top: 258px;
+    left: 1236px;
+    top: 29px;
 }
 
 #slide img {
+    width: 100%;
+    height: 100%;
+    display: none; /* Initially hide all images */
+}
+#slideCus{
+    width: 304px;
+    height: 644px;
+    position: absolute;
+    left: 1580px;
+    top: 256px;
+}
+#slideCus img {
     width: 100%;
     height: 100%;
     display: none; /* Initially hide all images */
