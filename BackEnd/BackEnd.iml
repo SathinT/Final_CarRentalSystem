@@ -12,6 +12,9 @@
         </sourceRoots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -28,5 +31,9 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.30" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.3.30" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.30" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.3.30" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.30" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.30" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.30" level="project" />
   </component>
 </module>

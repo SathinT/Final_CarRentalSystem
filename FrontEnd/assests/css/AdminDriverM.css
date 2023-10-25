@@ -1,7 +1,7 @@
 .inputs {
     position: relative;
-    left: 30px;
-    top: 52px;
+    left: 42px;
+    top: 68px;
 }
 #inDId{
     position: relative;
@@ -108,18 +108,18 @@
 }
 #inDContact{
     position: relative;
-    left: 903px;
-    top: -270px;
+    left: 897px;
+    top: -225px;
 }
 #inDUserName{
     position: relative;
-    left: -2px;
-    top: -244px;
+    left: -4px;
+    top: -198px;
 }
 #inDPassword{
     position: relative;
-    left: 221px;
-    top: -154px;
+    left: 223px;
+    top: -243px;
 }
 
 /*Buttons*/
@@ -256,8 +256,8 @@ button:hover::before {
 /*file upload*/
 .inputBox {
     position: relative;
-    top: -472px;
-    left: -6px;
+    top: -294px;
+    left: 444px;
 }
 
 .inputBox input {

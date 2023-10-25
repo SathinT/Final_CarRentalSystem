@@ -1,6 +1,6 @@
 package lk.easyCarRental.advisor;
 
-import lk.easyCarRental.spring.util.ResponseUtil;
+import lk.easyCarRental.util.ResponseUtil;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
