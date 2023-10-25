@@ -63,6 +63,13 @@
                                     Monthly        - Rs.227,150.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.85.00
                                 </p>
+                                <p class="MImg">More Images</p>
+                                <div class="popup">
+                                    <img src="../images/Cars/Luxury/in/Premio/premioI.jpg" alt="Image 1" />
+                                    <img src="../images/Cars/Luxury/in/Premio/premioF.jpeg" alt="Image 2" />
+                                    <img src="../images/Cars/Luxury/in/Premio/premioB.jpg" alt="Image 3" />
+                                    <img src="../images/Cars/Luxury/in/Premio/PremioS.jpg" alt="Image 4" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -86,6 +93,13 @@
                                     Monthly        - Rs.300,000.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.100.00
                                 </p>
+                                <p class="MImg">More Images</p>
+                                <div class="popup">
+                                    <img src="../images/Cars/Luxury/in/Benz/BenzI.jpg" alt="Image 1" />
+                                    <img src="../images/Cars/Luxury/in/Benz/BenzF.jpg" alt="Image 2" />
+                                    <img src="../images/Cars/Luxury/in/Benz/benzB.jpg" alt="Image 3" />
+                                    <img src="../images/Cars/Luxury/in/Benz/BenzS.jpg" alt="Image 4" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -110,6 +124,13 @@
                                     Monthly        - Rs.300,000.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.100.00
                                 </p>
+                                <p class="MImg">More Images</p>
+                                <div class="popup">
+                                    <img src="../images/Cars/Luxury/in/Bmw/bmwI.jpg" alt="Image 1" />
+                                    <img src="../images/Cars/Luxury/in/Bmw/bmwF.jpg" alt="Image 2" />
+                                    <img src="../images/Cars/Luxury/in/Bmw/bmwB.jpg" alt="Image 3" />
+                                    <img src="../images/Cars/Luxury/in/Bmw/bmwS.jpg" alt="Image 4" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,5 +152,36 @@ footer class="bg-dark py-4 mt-auto">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
+
+<script>
+    // Get all elements with class "MImg"
+    const mImgElements = document.querySelectorAll(".MImg");
+
+    // Function to show the pop-up
+    function showPopup(event) {
+        // Find the associated pop-up based on the class name
+        const popupClass = event.target.nextElementSibling.className;
+        const popup = document.querySelector(`.${popupClass}`);
+        popup.style.display = "block";
+    }
+
+    // Function to hide the pop-up
+    function hidePopup(event) {
+        // Find the associated pop-up based on the class name
+        const popupClass = event.target.nextElementSibling.className;
+        const popup = document.querySelector(`.${popupClass}`);
+        popup.style.display = "none";
+    }
+
+    // Add event listeners to show and hide the pop-up for each MImg element
+    mImgElements.forEach((element) => {
+        element.addEventListener("mouseover", showPopup);
+        element.addEventListener("mouseout", hidePopup);
+    });
+</script>
+
+
+
+
 </body>
 </html>

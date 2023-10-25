@@ -57,14 +57,11 @@
                                     Reg No.           - KH-7834<br>
                                     No. Of Passengers - 04<br>
                                     Fuel Type         - Petrol<br>
-
                                     Price<br>
                                     Daily          - Rs.2500 (FM - 100Km)<br>
                                     Monthly        - Rs.64,350.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.30.00
                                 </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
@@ -80,12 +77,18 @@
                                     Reg No.           - PO-3489<br>
                                     No. Of Passengers - 04<br>
                                     Fuel Type         - Petrol<br>
-
                                     Price<br>
                                     Daily          - Rs.3000 (FM - 100Km)<br>
                                     Monthly        - Rs.71,390.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.35.00
                                 </p>
+<!--                                <p class="MImg">More Images</p>-->
+<!--                                <div class="popup">-->
+<!--                                    <img src="../images/Cars/Genaral/in/alto/altoI.jpeg" alt="Image 1" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/alto/altoF.jpeg" alt="Image 2" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/alto/altoB.jpg" alt="Image 3" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/alto/altoS.jpeg" alt="Image 4"/>-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -103,12 +106,18 @@
                                     Reg No.           - HD-8795<br>
                                     No. Of Passengers - 04<br>
                                     Fuel Type         - Petrol<br>
-
                                     Price<br>
                                     Daily          - Rs.3300 (FM - 100Km)<br>
                                     Monthly        - Rs.77,220.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.35.00
                                 </p>
+<!--                                <p class="MImg">More Images</p>-->
+<!--                                <div class="popup">-->
+<!--                                    <img src="../images/Cars/Genaral/in/celerio/celetioI.jpg" alt="Image 1" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/celerio/celerioF.jpg" alt="Image 2" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/celerio/celerioB.jpeg" alt="Image 3" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/celerio/CelerioS.jpg" alt="Image 4"/>-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -126,12 +135,18 @@
                                     Reg No.           - BF-5678<br>
                                     No. Of Passengers - 04<br>
                                     Fuel Type         - Petrol<br>
-
                                     Price<br>
                                     Daily          - Rs.3800 (FM - 100Km)<br>
                                     Monthly        - Rs.90,200.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.35.00
                                 </p>
+<!--                                <p class="MImg">More Images</p>-->
+<!--                                <div class="popup">-->
+<!--                                    <img src="../images/Cars/Genaral/in/axia/axiaI.jpg" alt="Image 1" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/axia/axiaF.jpg" alt="Image 2" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/axia/axiaB.jpeg" alt="Image 3" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/axia/axiaS.jpeg" alt="Image 4"/>-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -149,16 +164,24 @@
                                     Reg No.           - ER-5687<br>
                                     No. Of Passengers - 04<br>
                                     Fuel Type         - Petrol<br>
-
                                     Price<br>
                                     Daily          - Rs.5000 (FM - 100Km)<br>
                                     Monthly        - Rs.110,330.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.49.50
                                 </p>
+<!--                                <p class="MImg">More Images</p>-->
+<!--                                <div class="popup">-->
+<!--                                    <img src="../images/Cars/Genaral/in/prius/priusI.jpg" alt="Image 1" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/prius/priusF.jpeg" alt="Image 2" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/prius/priusB.jpeg" alt="Image 3" />-->
+<!--                                    <img src="../images/Cars/Genaral/in/prius/priusS.jpeg" alt="Image 4"/>-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
             </div>
         </div>
     </section>
@@ -173,6 +196,33 @@ footer class="bg-dark py-4 mt-auto">
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Get all elements with class "MImg"
+    const mImgElements = document.querySelectorAll(".MImg");
+
+    // Function to show the pop-up
+    function showPopup(event) {
+        // Find the associated pop-up based on the class name
+        const popupClass = event.target.nextElementSibling.className;
+        const popup = document.querySelector(`.${popupClass}`);
+        popup.style.display = "block";
+    }
+
+    // Function to hide the pop-up
+    function hidePopup(event) {
+        // Find the associated pop-up based on the class name
+        const popupClass = event.target.nextElementSibling.className;
+        const popup = document.querySelector(`.${popupClass}`);
+        popup.style.display = "none";
+    }
+
+    // Add event listeners to show and hide the pop-up for each MImg element
+    mImgElements.forEach((element) => {
+        element.addEventListener("mouseover", showPopup);
+        element.addEventListener("mouseout", hidePopup);
+    });
+</script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 </body>

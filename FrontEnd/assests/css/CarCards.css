@@ -86,3 +86,19 @@
         opacity: 0.3;
     }
 }
+
+/*popup*/
+.popup {
+    display: none;
+    position: absolute;
+    background-color: #383a3d;
+    border: 1px solid rgba(204, 204, 204, 0);
+    padding: 10px;
+    z-index: 1;
+}
+
+.popup img {
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+}

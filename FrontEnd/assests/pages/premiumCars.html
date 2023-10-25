@@ -63,6 +63,13 @@
                                     Monthly        - Rs.120,330.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.49.50
                                 </p>
+                                <p class="MImg">More Images</p>
+                                <div class="popup">
+                                    <img src="../images/Cars/Premium/in/axio/axioI.jpeg" alt="Image 1" />
+                                    <img src="../images/Cars/Premium/in/axio/axioF.jpg" alt="Image 2" />
+                                    <img src="../images/Cars/Premium/in/axio/axioB.jpg" alt="Image 3" />
+                                    <img src="../images/Cars/Premium/in/axio/axioS.jpeg" alt="Image 4"/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -72,7 +79,7 @@
                         <div class="innerCard">
                             <div class="frontSide">
                                 <img class="img-fluid" src="../images/Cars/Premium/Bezza.png" alt="..." />
-                                <p class="title">Toyota Premio</p>
+                                <p class="title">Perodua Bezza Prime Sedan</p>
                                 <p>Auto | Grey</p>
                             </div>
                             <div class="backSide">
@@ -86,6 +93,13 @@
                                     Monthly        - Rs.120,330.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.49.50
                                 </p>
+                                <p class="MImg">More Images</p>
+                                <div class="popup">
+                                    <img src="../images/Cars/Premium/in/bezza/bezzaI.jpeg" alt="Image 1" />
+                                    <img src="../images/Cars/Premium/in/bezza/bezzaF.jpeg" alt="Image 2" />
+                                    <img src="../images/Cars/Premium/in/bezza/bezzaB.jpeg" alt="Image 3" />
+                                    <img src="../images/Cars/Premium/in/bezza/bezzaS.jpeg" alt="Image 4"/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -109,6 +123,13 @@
                                     Monthly        - Rs.155,7600.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.60.00
                                 </p>
+                                <p class="MImg">More Images</p>
+                                <div class="popup">
+                                    <img src="../images/Cars/Premium/in/allion/allionI.jpg" alt="Image 1" />
+                                    <img src="../images/Cars/Premium/in/allion/allionF.jpeg" alt="Image 2" />
+                                    <img src="../images/Cars/Premium/in/allion/allionB.jpg" alt="Image 3" />
+                                    <img src="../images/Cars/Premium/in/allion/allionS.jpeg" alt="Image 4"/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,6 +153,13 @@
                                     Monthly        - Rs.175,230.00 (FM - 2400Km)<br>
                                     Per Extra KM   - Rs.65.00
                                 </p>
+                                <p class="MImg">More Images</p>
+                                <div class="popup">
+                                    <img src="../images/Cars/Premium/in/axio-nkr/nkrI.jpeg" alt="Image 1" />
+                                    <img src="../images/Cars/Premium/in/axio-nkr/nkrF.jpeg" alt="Image 2" />
+                                    <img src="../images/Cars/Premium/in/axio-nkr/nkrB.jpeg" alt="Image 3" />
+                                    <img src="../images/Cars/Premium/in/axio-nkr/nkrS.jpeg" alt="Image 4"/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -150,6 +178,33 @@ footer class="bg-dark py-4 mt-auto">
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Get all elements with class "MImg"
+    const mImgElements = document.querySelectorAll(".MImg");
+
+    // Function to show the pop-up
+    function showPopup(event) {
+        // Find the associated pop-up based on the class name
+        const popupClass = event.target.nextElementSibling.className;
+        const popup = document.querySelector(`.${popupClass}`);
+        popup.style.display = "block";
+    }
+
+    // Function to hide the pop-up
+    function hidePopup(event) {
+        // Find the associated pop-up based on the class name
+        const popupClass = event.target.nextElementSibling.className;
+        const popup = document.querySelector(`.${popupClass}`);
+        popup.style.display = "none";
+    }
+
+    // Add event listeners to show and hide the pop-up for each MImg element
+    mImgElements.forEach((element) => {
+        element.addEventListener("mouseover", showPopup);
+        element.addEventListener("mouseout", hidePopup);
+    });
+</script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 </body>
