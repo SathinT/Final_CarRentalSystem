@@ -3,7 +3,7 @@
     left: 30px;
     top: 52px;
 }
-#inRegNo{
+#inDId{
     position: relative;
     left: -4px;
     top: -45px;
@@ -91,70 +91,35 @@
     left: -51px;
     top: -125px;
 }
-#inBrand{
+#inDLicenNo{
     position: relative;
     left: 219px;
     top: -90px;
 }
-#inType{
+#inDName{
     position: relative;
     left: 441px;
     top: -135px;
 }
-#inPassenger{
+#inDEmail{
     position: relative;
     left: 668px;
     top: -180px;
 }
-#inTransmission{
+#inDContact{
     position: relative;
     left: 903px;
     top: -270px;
 }
-#inFuel{
+#inDUserName{
     position: relative;
     left: -2px;
     top: -244px;
 }
-#inColor{
+#inDPassword{
     position: relative;
     left: 221px;
     top: -154px;
-}
-#inUname{
-    position: relative;
-    left: 625px;
-    top: -298px;
-}
-#inDailyR{
-    position: relative;
-    left: 439px;
-    top: -289px;
-}
-#inMonthlyR{
-    position: relative;
-    left: 673px;
-    top: -334px;
-}
-#inExKmP{
-    position: relative;
-    left: 906px;
-    top: -379px;
-}
-#inCurrentMilage{
-    position: relative;
-    left: 673px;
-    top: -346px;
-}
-#inDailyFreeMilage{
-    position: relative;
-    left: 217px;
-    top: -391px;
-}
-#inMonthlyFreeMilage{
-    position: relative;
-    left: 437px;
-    top: -436px;
 }
 
 /*Buttons*/
@@ -319,100 +284,3 @@ button:hover::before {
     border: 1px solid #e8e8e8;
     color: #e8e8e8;
 }
-
-
-
-/*.inputBoxB {*/
-/*    position: relative;*/
-/*    top: -445px;*/
-/*    left: 221px;*/
-/*}*/
-
-/*.inputBoxB input {*/
-/*    padding: 15px 20px;*/
-/*    outline: none;*/
-/*    background: transparent;*/
-/*    border-radius: 5px;*/
-/*    color: #e8e8e8;*/
-/*    border: 1px solid#e8e8e8;*/
-/*    font-size: 0.7em;*/
-/*    width: 194px;*/
-/*    height: 51px;*/
-/*}*/
-
-/*.inputBoxB span {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    font-size: 0.7em;*/
-/*    transform: translateX(14px) translateY(-7.5px);*/
-/*    padding: 0 6px 1px 5px;*/
-/*    border-radius: 2px;*/
-/*    background: #212121;*/
-/*    letter-spacing: 1px;*/
-/*    border: 1px solid #e8e8e8;*/
-/*    color: #e8e8e8;*/
-/*}*/
-
-
-/*.inputBoxS {*/
-/*    position: relative;*/
-/*    top: -495px;*/
-/*    left: 441px;*/
-/*}*/
-
-/*.inputBoxS input {*/
-/*    padding: 15px 20px;*/
-/*    outline: none;*/
-/*    background: transparent;*/
-/*    border-radius: 5px;*/
-/*    color: #e8e8e8;*/
-/*    border: 1px solid#e8e8e8;*/
-/*    font-size: 0.7em;*/
-/*    width: 194px;*/
-/*    height: 51px;*/
-/*}*/
-
-/*.inputBoxS span {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    font-size: 0.7em;*/
-/*    transform: translateX(14px) translateY(-7.5px);*/
-/*    padding: 0 6px 1px 5px;*/
-/*    border-radius: 2px;*/
-/*    background: #212121;*/
-/*    letter-spacing: 1px;*/
-/*    border: 1px solid #e8e8e8;*/
-/*    color: #e8e8e8;*/
-/*}*/
-
-
-/*.inputBoxI {*/
-/*    position: relative;*/
-/*    top: -548px;*/
-/*    left: 670px;*/
-/*}*/
-
-/*.inputBoxI input {*/
-/*    padding: 15px 20px;*/
-/*    outline: none;*/
-/*    background: transparent;*/
-/*    border-radius: 5px;*/
-/*    color: #e8e8e8;*/
-/*    border: 1px solid#e8e8e8;*/
-/*    font-size: 0.7em;*/
-/*    width: 194px;*/
-/*    height: 51px;*/
-/*}*/
-
-/*.inputBoxI span {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    font-size: 0.7em;*/
-/*    transform: translateX(14px) translateY(-7.5px);*/
-/*    padding: 0 6px 1px 5px;*/
-/*    border-radius: 2px;*/
-/*    background: #212121;*/
-/*    letter-spacing: 1px;*/
-/*    border: 1px solid #e8e8e8;*/
-/*    color: #e8e8e8;*/
-/*}*/
