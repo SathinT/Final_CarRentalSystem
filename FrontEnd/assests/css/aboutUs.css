@@ -1,0 +1,12 @@
+#aboutbackimg{
+    width: 90px;
+    height: 90px;
+}
+.img-fluid{
+    max-width: 1000%;
+    height: auto;
+}
+.text-center{
+    left: 90px;
+    position: absolute;
+}
