@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Customer Dashboard | Easy Car Rental</title>
+    <title>Payments | Easy Car Rental</title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,7 +30,8 @@
     <link rel="stylesheet" href="../css/adminDashboard.css">
     <link rel="stylesheet" href="../css/adminCards.css">
     <link rel="stylesheet" href="../css/adminTable.css">
-    <link rel="stylesheet" href="../css/inputs.css">
+    <link rel="stylesheet" href="../css/CustomerPayment.css">
+
 
 </head>
 
@@ -49,7 +50,7 @@
         <div id="main-menu" class="main-menu collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard</a>
+                    <a href="CustomerDashboard.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard</a>
                 </li>
                 <h3 class="menu-title">Basics</h3><!-- /.menu-title -->
 
@@ -68,7 +69,7 @@
 
                 <h3 class="menu-title">Finance</h3><!-- /.menu-title -->
                 <li>
-                    <a href="CustomerPayment.html"> <i class="menu-icon ti-email"></i>Payments</a>
+                    <a href="widgets.html"> <i class="menu-icon ti-email"></i>Payments</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -85,7 +86,7 @@
         <div class="col-sm-4">
             <div class="page-header float-left bg-dark">
                 <div class="page-title bg-dark">
-                    <h1 class="text-white">Customer Dashboard</h1>
+                    <h1 class="text-white">Payments</h1>
                 </div>
             </div>
         </div>
@@ -103,127 +104,71 @@
         </svg>
     </div>
 
-<!--    Inputs-->
-    <div class="background">
-    <div class="inputs">
+        <!--        TABLE-->
+        <section class="intro">
+            <div class="mask d-flex align-items-center h-100">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="card mask-custom">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless text-white mb-0">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">EMPLOYEES</th>
+                                                <th scope="col">POSITION</th>
+                                                <th scope="col">CONTACTS</th>
+                                                <th scope="col">AGE</th>
+                                                <th scope="col">ADDRESS</th>
+                                                <th scope="col">SALARY</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">Tiger Nixon</th>
+                                                <td>System Architect</td>
+                                                <td>tnixon12@example.com</td>
+                                                <td>61</td>
+                                                <td>Edinburgh</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Sonya Frost</th>
+                                                <td>Software Engineer</td>
+                                                <td>sfrost34@example.com</td>
+                                                <td>23</td>
+                                                <td>Edinburgh</td>
+                                                <td>$103,600</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tiger Nixon</th>
+                                                <td>System Architect</td>
+                                                <td>tnixon12@example.com</td>
+                                                <td>61</td>
+                                                <td>Edinburgh</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Sonya Frost</th>
+                                                <td>Software Engineer</td>
+                                                <td>sfrost34@example.com</td>
+                                                <td>23</td>
+                                                <td>Edinburgh</td>
+                                                <td>$103,600</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div id="inCusId" class="wave-group">
-            <input required="" type="text" class="input">
-            <span class="bar"></span>
-            <label class="label">
-                <span class="label-char" style="--index: 0">R</span>
-                <span class="label-char" style="--index: 1">e</span>
-                <span class="label-char" style="--index: 2">n</span>
-                <span class="label-char" style="--index: 3">t</span>
-                <span class="label-char" style="--index: 4">-</span>
-                <span class="label-char" style="--index: 5">I</span>
-                <span class="label-char" style="--index: 6">D</span>
-            </label>
-        </div>
-
-        <div id="inAddress" class="wave-group">
-            <input required="" type="text" class="input">
-            <span class="bar"></span>
-            <label class="label">
-                <span class="label-char" style="--index: 0">A</span>
-                <span class="label-char" style="--index: 1">d</span>
-                <span class="label-char" style="--index: 2">d</span>
-                <span class="label-char" style="--index: 3">r</span>
-                <span class="label-char" style="--index: 4">e</span>
-                <span class="label-char" style="--index: 5">s</span>
-                <span class="label-char" style="--index: 6">s</span>
-            </label>
-        </div>
-
-        <div id="inEmail" class="wave-group">
-            <input required="" type="text" class="input">
-            <span class="bar"></span>
-            <label class="label">
-                <span class="label-char" style="--index: 0">E</span>
-                <span class="label-char" style="--index: 1">-</span>
-                <span class="label-char" style="--index: 2">M</span>
-                <span class="label-char" style="--index: 3">a</span>
-                <span class="label-char" style="--index: 4">i</span>
-                <span class="label-char" style="--index: 5">l</span>
-            </label>
-        </div>
-
-        <div id="inContact" class="wave-group">
-            <input required="" type="text" class="input">
-            <span class="bar"></span>
-            <label class="label">
-                <span class="label-char" style="--index: 0">C</span>
-                <span class="label-char" style="--index: 1">o</span>
-                <span class="label-char" style="--index: 2">n</span>
-                <span class="label-char" style="--index: 3">t</span>
-                <span class="label-char" style="--index: 4">a</span>
-                <span class="label-char" style="--index: 5">c</span>
-                <span class="label-char" style="--index: 6">t</span>
-                <span class="label-char" style="--index: 7">-</span>
-                <span class="label-char" style="--index: 8">N</span>
-                <span class="label-char" style="--index: 9">o</span>
-            </label>
-        </div>
-
-        <div id="inNic" class="wave-group">
-            <input required="" type="text" class="input">
-            <span class="bar"></span>
-            <label class="label">
-                <span class="label-char" style="--index: 0">N</span>
-                <span class="label-char" style="--index: 1">I</span>
-                <span class="label-char" style="--index: 2">C</span>
-            </label>
-        </div>
-
-        <div id="inLicense" class="wave-group">
-            <input required="" type="text" class="input">
-            <span class="bar"></span>
-            <label class="label">
-                <span class="label-char" style="--index: 0">L</span>
-                <span class="label-char" style="--index: 1">i</span>
-                <span class="label-char" style="--index: 2">c</span>
-                <span class="label-char" style="--index: 3">e</span>
-                <span class="label-char" style="--index: 4">n</span>
-                <span class="label-char" style="--index: 5">c</span>
-                <span class="label-char" style="--index: 6">e</span>
-                <span class="label-char" style="--index: 7">-</span>
-                <span class="label-char" style="--index: 8">N</span>
-                <span class="label-char" style="--index: 9">o</span>
-            </label>
-        </div>
-
-        <div id="inUname" class="wave-group">
-            <input required="" type="text" class="input">
-            <span class="bar"></span>
-            <label class="label">
-                <span class="label-char" style="--index: 0">U</span>
-                <span class="label-char" style="--index: 1">s</span>
-                <span class="label-char" style="--index: 2">e</span>
-                <span class="label-char" style="--index: 3">r</span>
-                <span class="label-char" style="--index: 4">n</span>
-                <span class="label-char" style="--index: 5">a</span>
-                <span class="label-char" style="--index: 6">m</span>
-                <span class="label-char" style="--index: 7">e</span>
-            </label>
-        </div>
-
-        <div id="inDate" class="wave-group date-picker">
-            <!--            <label for="dateofbirth">Date Of Birth</label>-->
-            <label class="label">
-            </label>
-            <input type="text" id="datepicker" placeholder="Select a date">
-            <div class="calendar" id="calendar"></div>
-        </div>
-    </div>
-    </div>
-
-    <button id="cancelBtn"> <span>Cancel ×</span>
-    </button>
-    <button id="nextBtn"> <span>Select Car →</span>
-    </button>
-
-
-        <div id="slideCus">
+        <div id="slide">
             <img src="../images/Cars/slide/Frame%201.jpg" alt="Image 1">
             <img src="../images/Cars/slide/Frame%202.jpg" alt="Image 2">
             <img src="../images/Cars/slide/Frame%203.jpg" alt="Image 3">
@@ -231,10 +176,6 @@
             <img src="../images/Cars/slide/Frame%205.jpg" alt="Image 5">
             <img src="../images/Cars/slide/Frame%206.jpg" alt="Image 6">
         </div>
-
-    <div id="ad3">
-        <img src="../images/Cars/ad3.png">
-    </div>
 
 
     </div> <!-- .content -->
@@ -253,6 +194,7 @@
 <script src="assets/js/widgets.js"></script>
 <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
 <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+<script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
 <script>
 </script>
 <script>
@@ -291,7 +233,7 @@
 
 <!--slide-->
 <script>
-    const images = document.querySelectorAll('#slideCus img');
+    const images = document.querySelectorAll('#slide img');
     let currentIndex = 0;
 
     function showImage(index) {
