@@ -5,36 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental Registration</title>
     <link rel="stylesheet" href="../css/register.css">
+<!--    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">-->
+
 
 </head>
 <body>
 <!--<img id="bgImg2" src="../images/Cars/2.png" width="200" height="200">-->
 <div class="registration-container">
     <div class="registration-header">
-        <h1 class="text-center">Easy Car Rental</h1>
+<!--        <h1 class="text-center">Easy Car Rental</h1>-->
         <h1 class="text-gradient">Registration</h1>
     </div>
-    <form class="registration-form">
+    <form id="RegistrationForm" class="registration-form">
+        <div class="input-group">
+            <label for="email">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="input-group">
+            <label for="contactNo">Contact Number:</label>
+            <input type="tel" id="contactNo" name="phone" required>
+        </div>
         <div class="input-group">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
         </div>
         <div class="input-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div class="input-group">
-            <label for="password">New Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div class="input-group">
             <label for="nic">NIC Number:</label>
             <input type="text" id="nic" name="nic" required>
         </div>
-<!--        <div class="input-group">-->
-<!--            <label for="nicPhoto">Upload Photo of NIC:</label>-->
-<!--            <input type="file" id="nicPhoto" name="nicPhoto" required>-->
-<!--        </div>-->
         <div class="input-group">
             <label for="license">Driving License Number:</label>
             <input type="text" id="license" name="license" required>
@@ -45,16 +47,16 @@
             <input type="file" id="licensePhotoB" name="licencePhoto" required>
         </div>
         <div class="input-group">
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" required></textarea>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
         </div>
         <div class="input-group">
-            <label for="phone">Contact Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <label for="password">New Password:</label>
+            <input type="password" id="password" name="password" required>
         </div>
-        <div class="text-center">
+        <div id="Register" class="text-center">
 <!--            <button type="submit" class="btn-register">Register</button>-->
-            <button>
+            <button type="button">
                 Register
             </button>
         </div>
@@ -65,5 +67,8 @@
 <!--        <img id="bgImg3" src="../images/Cars/1.png">-->
     </form>
 </div>
+<script src="../lib/bootstrap.min.js"></script>
+<script src="../lib/jquery-3.7.0.min.js"></script>
+<script src="../../controllers/customerControllers.js"></script>
 </body>
 </html>
