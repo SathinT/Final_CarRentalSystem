@@ -113,13 +113,13 @@
 }
 #inDUserName{
     position: relative;
-    left: -4px;
-    top: -198px;
+    left: 217px;
+    top: -283px;
 }
 #inDPassword{
     position: relative;
-    left: 223px;
-    top: -243px;
+    left: 440px;
+    top: -328px;
 }
 
 /*Buttons*/
@@ -256,8 +256,8 @@ button:hover::before {
 /*file upload*/
 .inputBox {
     position: relative;
-    top: -294px;
-    left: 444px;
+    top: -184px;
+    left: -4px;
 }
 
 .inputBox input {

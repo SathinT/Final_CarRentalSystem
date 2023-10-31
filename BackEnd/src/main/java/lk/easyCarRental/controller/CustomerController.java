@@ -26,6 +26,6 @@ public class CustomerController {
         System.out.println(userDTO.toString());
         customerDTO.setUser(userDTO);
         customerService.saveCustomer(customerDTO);
-        return new ResponseUtil("OK", "Successfully Registered!", null);
+        return new ResponseUtil("OK", "Successfully Customer Registered!", null);
     }
 }

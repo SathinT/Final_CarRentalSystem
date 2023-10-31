@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.CascadeType;
 import javax.persistence.OneToOne;
@@ -20,7 +21,7 @@ public class DriverDTO {
     private String driverName;
     private String driverEmail;
     private String driverContactNo;
-    private String driverFrontImg;
-    private String driverBackImg;
-    private User user;
+    private MultipartFile driverFrontImg;
+    private MultipartFile driverBackImg;
+    private UserDTO user;
 }
