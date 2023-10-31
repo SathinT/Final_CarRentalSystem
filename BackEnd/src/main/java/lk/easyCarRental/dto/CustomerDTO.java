@@ -15,7 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class CustomerDTO {
 
     private String customerId;
-    private  String name;
+    private String name;
     private String address;
     private String contactNo;
     private String email;
