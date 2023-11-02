@@ -132,47 +132,18 @@
                     <table class="table table-borderless text-white mb-0">
                       <thead>
                       <tr>
-                        <th scope="col">EMPLOYEES</th>
-                        <th scope="col">POSITION</th>
-                        <th scope="col">CONTACTS</th>
-                        <th scope="col">AGE</th>
-                        <th scope="col">ADDRESS</th>
-                        <th scope="col">SALARY</th>
+                        <th scope="col">Cus Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Contact No.</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">NIC No.</th>
+                        <th scope="col">License No.</th>
                       </tr>
                       </thead>
-                      <tbody>
-                      <tr>
-                        <th scope="row">Tiger Nixon</th>
-                        <td>System Architect</td>
-                        <td>tnixon12@example.com</td>
-                        <td>61</td>
-                        <td>Edinburgh</td>
-                        <td>$320,800</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Sonya Frost</th>
-                        <td>Software Engineer</td>
-                        <td>sfrost34@example.com</td>
-                        <td>23</td>
-                        <td>Edinburgh</td>
-                        <td>$103,600</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Tiger Nixon</th>
-                        <td>System Architect</td>
-                        <td>tnixon12@example.com</td>
-                        <td>61</td>
-                        <td>Edinburgh</td>
-                        <td>$320,800</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Sonya Frost</th>
-                        <td>Software Engineer</td>
-                        <td>sfrost34@example.com</td>
-                        <td>23</td>
-                        <td>Edinburgh</td>
-                        <td>$103,600</td>
-                      </tr>
+
+                      <tbody id="CustomerTable">
+
                       </tbody>
                     </table>
                   </div>
@@ -183,6 +154,10 @@
         </div>
       </div>
     </section>
+
+  <button id="CustomerGetAll">
+    Get All
+  </button>
 
     <div id="slide">
       <img src="../images/Cars/slide/Frame%201.jpg" alt="Image 1">
@@ -201,13 +176,8 @@
 
 <script src="vendors/jquery/dist/jquery.min.js"></script>
 <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
-<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
 
 
-<script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
-<script src="assets/js/dashboard.js"></script>
-<script src="assets/js/widgets.js"></script>
 <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
 <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
 <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
@@ -274,6 +244,8 @@
   // Automatically advance to the next image every few seconds
   setInterval(nextImage, 3000); // Change image every 3 seconds
 </script>
+
+<script src="../../controllers/customerControllers.js"></script>
 
 </body>
 

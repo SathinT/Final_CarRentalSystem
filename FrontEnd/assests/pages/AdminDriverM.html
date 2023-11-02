@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Driver Management | Easy Car Rental</title>
-    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="description" content="Admin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-icon.png">
@@ -123,7 +123,7 @@
         </svg>
     </div>
 
-    <form id="DriverRegistrationForm" class="Driverregistration-form" enctype="multipart/form-data" role="form">
+    <form id="DriverRegistrationForm" enctype="multipart/form-data" role="form">
 
         <div class="background">
             <div class="inputs">
@@ -255,16 +255,18 @@
             </div>
         </div>
 
-        <button id="saveBtn"> <span>Save ✔</span>
+        <button id="DriversaveBtn" type="button"> <span>Save ✔</span>
         </button>
-        <button id="deleteBtn"> <span>Delete ×</span>
+        <button id="DriverdeleteBtn" type="button"> <span>Delete ×</span>
         </button>
-        <button id="updateBtn"> <span>Update ↻</span>
+        <button id="DriverupdateBtn" type="button"> <span>Update ↻</span>
         </button>
-        <button id="clearBtn"> <span>Clear ×</span>
+        <button id="DriverRefreshTable" type="button"> <span>Refresh Table ▼</span>
         </button>
 
-        <!--        TABLE-->
+    </form>
+
+    <!--        TABLE-->
         <section class="intro">
             <div class="mask d-flex align-items-center h-100">
                 <div class="container">
@@ -276,47 +278,15 @@
                                         <table class="table table-borderless text-white mb-0">
                                             <thead>
                                             <tr>
-                                                <th scope="col">EMPLOYEES</th>
-                                                <th scope="col">POSITION</th>
-                                                <th scope="col">CONTACTS</th>
-                                                <th scope="col">AGE</th>
-                                                <th scope="col">ADDRESS</th>
-                                                <th scope="col">SALARY</th>
+                                                <th scope="col">Driver ID</th>
+                                                <th scope="col">License No.</th>
+                                                <th scope="col">Contact No.</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Email</th>
                                             </tr>
                                             </thead>
-                                            <tbody>
-                                            <tr>
-                                                <th scope="row">Tiger Nixon</th>
-                                                <td>System Architect</td>
-                                                <td>tnixon12@example.com</td>
-                                                <td>61</td>
-                                                <td>Edinburgh</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Sonya Frost</th>
-                                                <td>Software Engineer</td>
-                                                <td>sfrost34@example.com</td>
-                                                <td>23</td>
-                                                <td>Edinburgh</td>
-                                                <td>$103,600</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Tiger Nixon</th>
-                                                <td>System Architect</td>
-                                                <td>tnixon12@example.com</td>
-                                                <td>61</td>
-                                                <td>Edinburgh</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Sonya Frost</th>
-                                                <td>Software Engineer</td>
-                                                <td>sfrost34@example.com</td>
-                                                <td>23</td>
-                                                <td>Edinburgh</td>
-                                                <td>$103,600</td>
-                                            </tr>
+                                            <tbody id="DriverTable">
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -335,26 +305,24 @@
             <img src="../images/Cars/slide/Frame%204.jpg" alt="Image 4">
             <img src="../images/Cars/slide/Frame%205.jpg" alt="Image 5">
             <img src="../images/Cars/slide/Frame%206.jpg" alt="Image 6">
-        </div>
-
-
-    </form> <!-- .content -->
+        </div><!-- .content -->
 </div><!-- /#right-panel -->
 
 <!-- Right Panel -->
 
 <script src="vendors/jquery/dist/jquery.min.js"></script>
-<script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+<!--<script src="vendors/popper.js/dist/umd/popper.min.js"></script>-->
 <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="../../controllers/driverController.js"></script>
+<!--<script src="assets/js/main.js"></script>-->
 
 
 <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
-<script src="assets/js/dashboard.js"></script>
-<script src="assets/js/widgets.js"></script>
+<!--<script src="assets/js/dashboard.js"></script>-->
+<!--<script src="assets/js/widgets.js"></script>-->
 <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
 <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-<script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+<!--<script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>-->
 <script>
 </script>
 <script>
@@ -417,6 +385,8 @@
     // Automatically advance to the next image every few seconds
     setInterval(nextImage, 3000); // Change image every 3 seconds
 </script>
+
+<script src="../../controllers/driverController.js"></script>
 
 </body>
 

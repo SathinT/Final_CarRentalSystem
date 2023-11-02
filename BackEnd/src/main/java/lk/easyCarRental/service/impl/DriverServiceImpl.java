@@ -27,6 +27,7 @@ public class DriverServiceImpl implements DriverService {
 
     @Override
     public ArrayList<DriverDTO> getAllDrivers() {
+
         return null;
     }
 
@@ -68,13 +69,10 @@ public class DriverServiceImpl implements DriverService {
             driverDTO.getDriverBackImg().transferTo(licenBFile);
             driver.setDriverBackImg("upload/driver/drivingLicenseBack" + licenBFile.getName());
 
-            driverRepo.save(driver);
             System.out.println(driver);
+            driverRepo.save(driver);
         } catch (IOException e) {
             // Handle IOException, e.g., file transfer failure
-            e.printStackTrace();
-        } catch (Exception e) {
-            // Handle other exceptions
             e.printStackTrace();
         }
     }

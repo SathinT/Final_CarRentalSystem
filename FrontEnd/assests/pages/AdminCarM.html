@@ -123,13 +123,26 @@
         </svg>
     </div>
 
-    <div class="content mt-3">
+    <form id="CarRegistrationForm" enctype="multipart/form-data" role="form">
 
         <div class="background">
             <div class="inputs">
 
+                <div id="inCarId" class="wave-group">
+                    <input required="" type="text" class="input" name="CarId">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">C</span>
+                        <span class="label-char" style="--index: 1">a</span>
+                        <span class="label-char" style="--index: 2">r</span>
+                        <span class="label-char" style="--index: 3">-</span>
+                        <span class="label-char" style="--index: 4">I</span>
+                        <span class="label-char" style="--index: 5">D</span>
+                    </label>
+                </div>
+
                 <div id="inRegNo" class="wave-group">
-                    <input required="" type="text" class="input">
+                    <input required="" type="text" class="input" name="CarRegNo">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">R</span>
@@ -142,7 +155,7 @@
                 </div>
 
                 <div id="inBrand" class="wave-group">
-                    <input required="" type="text" class="input">
+                    <input required="" type="text" class="input" name="CarBrand">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">B</span>
@@ -154,7 +167,7 @@
                 </div>
 
                 <div id="inType" class="wave-group">
-                    <input required="" type="text" class="input">
+                    <input required="" type="text" class="input" name="CarType">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">T</span>
@@ -165,7 +178,7 @@
                 </div>
 
                 <div id="inPassenger" class="wave-group">
-                    <input required="" type="text" class="input">
+                    <input required="" type="text" class="input" name="CarNoOfPassengers">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">N</span>
@@ -188,7 +201,7 @@
                 </div>
 
                 <div id="inColor" class="wave-group">
-                    <input required="" type="text" class="input">
+                    <input required="" type="text" class="input" name="CarColor">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">C</span>
@@ -201,7 +214,7 @@
                 </div>
 
                 <div id="inTransmission" class="wave-group">
-                    <input required="" type="text" class="input">
+                    <input required="" type="text" class="input" name="CarTransmission">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">T</span>
@@ -220,7 +233,7 @@
                 </div>
 
                 <div id="inFuel" class="wave-group">
-                    <input required="" type="input" class="input">
+                    <input required="" type="input" class="input" name="CarFuel">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">F</span>
@@ -231,7 +244,7 @@
                 </div>
 
                 <div id="inDailyR" class="wave-group">
-                    <input required="" type="input" class="input">
+                    <input required="" type="input" class="input" name="CarDailyRate">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">D</span>
@@ -248,7 +261,7 @@
                 </div>
 
                 <div id="inMonthlyR" class="wave-group">
-                    <input required="" type="input" class="input">
+                    <input required="" type="input" class="input" name="CarMonthlyRate">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">M</span>
@@ -267,7 +280,7 @@
                 </div>
 
                 <div id="inExKmP" class="wave-group">
-                    <input required="" type="input" class="input">
+                    <input required="" type="input" class="input" name="CarExKmPrice">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">P</span>
@@ -292,7 +305,7 @@
                 </div>
 
                 <div id="inCurrentMilage" class="wave-group">
-                    <input required="" type="input" class="input">
+                    <input required="" type="input" class="input" name="CarCurrentMilage">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">C</span>
@@ -313,7 +326,7 @@
                 </div>
 
                 <div id="inDailyFreeMilage" class="wave-group">
-                    <input required="" type="input" class="input">
+                    <input required="" type="input" class="input" name="CarDailyFree">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">D</span>
@@ -337,7 +350,7 @@
                 </div>
 
                 <div id="inMonthlyFreeMilage" class="wave-group">
-                    <input required="" type="input" class="input">
+                    <input required="" type="input" class="input" name="CarMonthlyFreeMilage">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">M</span>
@@ -364,22 +377,22 @@
 
                 <div class="inputBox">
                 <div class="inputBoxF">
-                    <input required="" type="file">
+                    <input required="" type="file" name="CarImageFront">
                     <span>Front View</span>
                 </div>
 
                 <div class="inputBoxB">
-                    <input required="" type="file">
+                    <input required="" type="file" name="CarImageBack">
                     <span>Back View</span>
                 </div>
 
                 <div class="inputBoxS">
-                    <input required="" type="file">
+                    <input required="" type="file" name="CarImageSide">
                     <span>Side View</span>
                 </div>
 
                 <div class="inputBoxI">
-                    <input required="" type="file">
+                    <input required="" type="file" name="CarImageInterior">
                     <span>Inside View</span>
                 </div>
                 </div>
@@ -389,14 +402,16 @@
             </div>
         </div>
 
-        <button id="saveBtn"> <span>Save ✔</span>
+        <button id="CarsaveBtn" type="button"> <span>Save ✔</span>
         </button>
-        <button id="deleteBtn"> <span>Delete ×</span>
+        <button id="CardeleteBtn" type="button"> <span>Delete ×</span>
         </button>
-        <button id="updateBtn"> <span>Update ↻</span>
+        <button id="CarupdateBtn" type="button"> <span>Update ↻</span>
         </button>
-        <button id="clearBtn"> <span>Clear ×</span>
+        <button id="CarclearBtn" type="button"> <span>Clear ×</span>
         </button>
+
+    </form>
 
         <!--        TABLE-->
         <section class="intro">
@@ -469,10 +484,7 @@
             <img src="../images/Cars/slide/Frame%204.jpg" alt="Image 4">
             <img src="../images/Cars/slide/Frame%205.jpg" alt="Image 5">
             <img src="../images/Cars/slide/Frame%206.jpg" alt="Image 6">
-        </div>
-
-
-    </div> <!-- .content -->
+        </div><!-- .content -->
 </div><!-- /#right-panel -->
 
 <!-- Right Panel -->
@@ -480,12 +492,10 @@
 <script src="vendors/jquery/dist/jquery.min.js"></script>
 <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
 <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
 
 
 <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
-<script src="assets/js/dashboard.js"></script>
-<script src="assets/js/widgets.js"></script>
+
 <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
 <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
 <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
@@ -551,6 +561,7 @@
     // Automatically advance to the next image every few seconds
     setInterval(nextImage, 3000); // Change image every 3 seconds
 </script>
+<script src="../../controllers/carController.js"></script>
 
 </body>
 

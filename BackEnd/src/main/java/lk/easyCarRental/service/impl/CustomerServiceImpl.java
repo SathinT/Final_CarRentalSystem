@@ -6,6 +6,7 @@ import lk.easyCarRental.entity.User;
 import lk.easyCarRental.repo.CustomerRepo;
 import lk.easyCarRental.service.CustomerService;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ import java.io.Console;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 @Service
 @Transactional
@@ -35,7 +37,9 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public ArrayList<CustomerDTO> getAllCustomer() {
 
-        return null;
+        List<Customer> all = customerRepo.findAll();
+        return modelMapper.map(all, new TypeToken<List<CustomerDTO>>() {
+        }.getType());
     }
 
     @Override

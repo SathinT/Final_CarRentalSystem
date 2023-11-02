@@ -15,24 +15,24 @@ import javax.persistence.*;
 
 public class Car {
     @Id
-    String carId;
-    String regNo;
-    String brand;
-    String type;
-    String passenger;
-    String color;
-    String transmissionType;
-    String fuel;
-    String currentMilage;
-    String extraMilagePrice;
-    String waiverPayment;
-    String availability;
-    String dailyFreeMilage;
+    String CarId;
+    String CarRegNo;
+    String CarBrand;
+    String CarType;
+    String CarNoOfPassengers;
+    String CarColor;
+    String CarTransmission;
+    String CarFuel;
+    String CarDailyRate;
+    String CarMonthlyRate;
+    String CarExKmPrice;
+    String CarCurrentMilage;
+    String CarDailyFree;
     String dailyPrice;
-    String monthlyFreeMilage;
+    String CarMonthlyFreeMilage;
     String monthlyFreeMilagePrice;
-    String frontImg;
-    String backImg;
-    String sideImg;
-    String interiorImg;
+    String CarImageFront;
+    String CarImageBack;
+    String CarImageSide;
+    String CarImageInterior;
 }

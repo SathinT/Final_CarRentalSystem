@@ -5,7 +5,7 @@
 }
 #inRegNo{
     position: relative;
-    left: -4px;
+    left: 221px;
     top: -45px;
 }
 
@@ -88,37 +88,45 @@
     position: relative;
     width: 1218px;
     height: 417px;
-    left: -51px;
+    left: 35px;
     top: -125px;
+}
+#inCarId{
+    position: relative;
+    left: -4px;
+    top: 0px;
 }
 #inBrand{
     position: relative;
-    left: 219px;
+    left: 440px;
     top: -90px;
 }
 #inType{
     position: relative;
-    left: 441px;
+    left: 669px;
     top: -135px;
 }
 #inPassenger{
     position: relative;
-    left: 668px;
+    left: 911px;
     top: -180px;
 }
 #inTransmission{
+    z-index: 10;
     position: relative;
-    left: 903px;
-    top: -270px;
+    left: 221px;
+    top: -199px;
 }
 #inFuel{
+    z-index: 10;
     position: relative;
-    left: -2px;
+    left: 441px;
     top: -244px;
 }
 #inColor{
+    z-index: 10;
     position: relative;
-    left: 221px;
+    left: -4px;
     top: -154px;
 }
 #inUname{
@@ -127,38 +135,44 @@
     top: -298px;
 }
 #inDailyR{
+    z-index: 10;
     position: relative;
-    left: 439px;
+    left: 671px;
     top: -289px;
 }
 #inMonthlyR{
+    z-index: 10;
     position: relative;
-    left: 673px;
+    left: 907px;
     top: -334px;
 }
 #inExKmP{
+    z-index: 10;
     position: relative;
-    left: 906px;
-    top: -379px;
+    left: 217px;
+    top: -301px;
 }
 #inCurrentMilage{
+    z-index: 11;
     position: relative;
-    left: 673px;
+    left: 441px;
     top: -346px;
 }
 #inDailyFreeMilage{
+    z-index: 11;
     position: relative;
-    left: 217px;
+    left: 674px;
     top: -391px;
 }
 #inMonthlyFreeMilage{
+    z-index: 11;
     position: relative;
-    left: 437px;
+    left: 913px;
     top: -436px;
 }
 
 /*Buttons*/
-button {
+#CardeleteBtn {
     outline: none;
     cursor: pointer;
     border: none;
@@ -212,7 +226,7 @@ button::before {
 button:hover::before {
     transform: translate3d(100%, 0, 0);
 }
-#saveBtn{
+#CarsaveBtn{
     outline: none;
     cursor: pointer;
     border: none;
@@ -234,7 +248,7 @@ button:hover::before {
     width: 150px;
 
 }
-#updateBtn{
+#CarupdateBtn{
     outline: none;
     cursor: pointer;
     border: none;
@@ -255,7 +269,7 @@ button:hover::before {
     top: -224px;
     width: 150px;
 }
-#clearBtn{
+#CarclearBtn{
     cursor: pointer;
     border: none;
     padding: 0.9rem 2rem;
@@ -291,7 +305,7 @@ button:hover::before {
 /*file upload*/
 .inputBox {
     position: relative;
-    top: -472px;
+    top: -486px;
     left: -6px;
 }
 
@@ -320,99 +334,43 @@ button:hover::before {
     color: #e8e8e8;
 }
 
+.mask-custom {
+    background: rgba(24, 24, 16, .2);
+    border-radius: 2em;
+    backdrop-filter: blur(25px);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    width: 1150px;
+    position: absolute;
+    left: -180px;
+    top: -607px;
+}
 
 
-/*.inputBoxB {*/
-/*    position: relative;*/
-/*    top: -445px;*/
-/*    left: 221px;*/
-/*}*/
+/*slide*/
+#slide {
+    width: 304px;
+    height: 644px;
+    position: absolute;
+    left: 1591px;
+    top: 255px;
+}
 
-/*.inputBoxB input {*/
-/*    padding: 15px 20px;*/
-/*    outline: none;*/
-/*    background: transparent;*/
-/*    border-radius: 5px;*/
-/*    color: #e8e8e8;*/
-/*    border: 1px solid#e8e8e8;*/
-/*    font-size: 0.7em;*/
-/*    width: 194px;*/
-/*    height: 51px;*/
-/*}*/
-
-/*.inputBoxB span {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    font-size: 0.7em;*/
-/*    transform: translateX(14px) translateY(-7.5px);*/
-/*    padding: 0 6px 1px 5px;*/
-/*    border-radius: 2px;*/
-/*    background: #212121;*/
-/*    letter-spacing: 1px;*/
-/*    border: 1px solid #e8e8e8;*/
-/*    color: #e8e8e8;*/
-/*}*/
-
-
-/*.inputBoxS {*/
-/*    position: relative;*/
-/*    top: -495px;*/
-/*    left: 441px;*/
-/*}*/
-
-/*.inputBoxS input {*/
-/*    padding: 15px 20px;*/
-/*    outline: none;*/
-/*    background: transparent;*/
-/*    border-radius: 5px;*/
-/*    color: #e8e8e8;*/
-/*    border: 1px solid#e8e8e8;*/
-/*    font-size: 0.7em;*/
-/*    width: 194px;*/
-/*    height: 51px;*/
-/*}*/
-
-/*.inputBoxS span {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    font-size: 0.7em;*/
-/*    transform: translateX(14px) translateY(-7.5px);*/
-/*    padding: 0 6px 1px 5px;*/
-/*    border-radius: 2px;*/
-/*    background: #212121;*/
-/*    letter-spacing: 1px;*/
-/*    border: 1px solid #e8e8e8;*/
-/*    color: #e8e8e8;*/
-/*}*/
-
-
-/*.inputBoxI {*/
-/*    position: relative;*/
-/*    top: -548px;*/
-/*    left: 670px;*/
-/*}*/
-
-/*.inputBoxI input {*/
-/*    padding: 15px 20px;*/
-/*    outline: none;*/
-/*    background: transparent;*/
-/*    border-radius: 5px;*/
-/*    color: #e8e8e8;*/
-/*    border: 1px solid#e8e8e8;*/
-/*    font-size: 0.7em;*/
-/*    width: 194px;*/
-/*    height: 51px;*/
-/*}*/
-
-/*.inputBoxI span {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    font-size: 0.7em;*/
-/*    transform: translateX(14px) translateY(-7.5px);*/
-/*    padding: 0 6px 1px 5px;*/
-/*    border-radius: 2px;*/
-/*    background: #212121;*/
-/*    letter-spacing: 1px;*/
-/*    border: 1px solid #e8e8e8;*/
-/*    color: #e8e8e8;*/
-/*}*/
+#slide img {
+    width: 100%;
+    height: 100%;
+    display: none; /* Initially hide all images */
+}
+#slideCus{
+    width: 304px;
+    height: 644px;
+    position: absolute;
+    left: 1580px;
+    top: 256px;
+}
+#slideCus img {
+    width: 100%;
+    height: 100%;
+    display: none; /* Initially hide all images */
+}
