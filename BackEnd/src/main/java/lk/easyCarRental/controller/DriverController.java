@@ -30,4 +30,10 @@ public class DriverController {
         driverService.saveDriver(driverDTO);
         return new ResponseUtil("OK","Successfully Driver Registered!", null );
     }
+
+//    @DeleteMapping(params = {"driverId"})
+//    public ResponseUtil deleteDriver(String driverId){
+//        driverService.deleteDriver(driverId);
+//        return new ResponseUtil("Ok","Successfully Deleted",driverId);
+//    }
 }

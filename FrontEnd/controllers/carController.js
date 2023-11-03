@@ -71,6 +71,7 @@ function getAllCars() {
 }
 
 
+
 $("#CarsaveBtn").click(function () {
     var formData = new FormData($("#CarRegistrationForm")[0]);
     console.log(formData)

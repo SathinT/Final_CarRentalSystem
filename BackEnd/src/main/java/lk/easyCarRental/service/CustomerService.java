@@ -7,8 +7,7 @@ import java.util.ArrayList;
 
 public interface CustomerService {
     ArrayList<CustomerDTO> getAllCustomer();
-
     void saveCustomer(CustomerDTO customerDTO);
-    void deleteCustomer(String customerId, CustomerDTO customerDTO);
+    void deleteCustomer(String customerId);
     void updateCustomer(CustomerDTO customerDTO);
 }

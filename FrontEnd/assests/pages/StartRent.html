@@ -1,253 +1,479 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="utf-8" />-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />-->
-<!--    <meta name="description" content="" />-->
-<!--    <meta name="author" content="" />-->
-<!--    <title>Easy Car Rental</title>-->
-<!--    <link rel="icon" type="image/x-icon" href="assests/images/car.ico" />-->
-<!--    <link rel="preconnect" href="https://fonts.googleapis.com" />-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />-->
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />-->
-<!--    <link rel="stylesheet" href="../css/customerLoggedin.css">-->
-<!--    <link rel="stylesheet" href="../css/inputs.css">-->
-<!--    <link rel="stylesheet" href="../css/startRent.css">-->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Start Rent | Easy Car Rental</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
 
 
-<!--</head>-->
-<!--<body class="d-flex bg-dark flex-column h-100 bg-gradient-primary-to-secondary">-->
-<!--<main class="flex-shrink-0">-->
-<!--    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">-->
-<!--        <div class="container px-5">-->
-<!--            <a class="navbar-brand" href="index.html"><span class="fw-bolder text-gradient">Easy Car Rental</span></a>-->
-<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>-->
-<!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-<!--                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">-->
-<!--                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>-->
-<!--                    <li class="nav-item"><a class="nav-link" href="assests/pages/carCategory.html">Cars</a></li>-->
-<!--                    <li class="nav-item"><a class="nav-link" href="projects.html">About</a></li>-->
-<!--                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>-->
 
-<!--                    <div class="dropdown profimg">-->
-<!--                        <img src="../images/prof1.jpg" id="dropdown-button">-->
-<!--                        <div class="dropdown-content" id="myDropdown">-->
-<!--                            &lt;!&ndash; Add your dropdown menu items here &ndash;&gt;-->
-<!--                            <a href="#">View Profile</a>-->
-<!--                            <a href="#">Log Out</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </nav>-->
-<!--    <div class="background">-->
-<!--        <div class="inputs">-->
 
-<!--    <div id="inCusId" class="wave-group">-->
-<!--            <input required="" type="text" class="input">-->
-<!--            <span class="bar"></span>-->
-<!--            <label class="label">-->
-<!--                <span class="label-char" style="&#45;&#45;index: 0">R</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 1">e</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 2">n</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 3">t</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 4">-</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 5">I</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 6">D</span>-->
-<!--            </label>-->
-<!--        </div>-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/adminDashboard.css">
+    <link rel="stylesheet" href="../css/adminCards.css">
+    <link rel="stylesheet" href="../css/adminTable.css">
+    <link rel="stylesheet" href="../css/startRent.css">
 
-<!--        <div id="inAddress" class="wave-group">-->
-<!--            <input required="" type="text" class="input">-->
-<!--            <span class="bar"></span>-->
-<!--            <label class="label">-->
-<!--                <span class="label-char" style="&#45;&#45;index: 0">A</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 1">d</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 2">d</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 3">r</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 4">e</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 5">s</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 6">s</span>-->
-<!--            </label>-->
-<!--        </div>-->
+</head>
 
-<!--        <div id="inEmail" class="wave-group">-->
-<!--            <input required="" type="text" class="input">-->
-<!--            <span class="bar"></span>-->
-<!--            <label class="label">-->
-<!--                <span class="label-char" style="&#45;&#45;index: 0">E</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 1">-</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 2">M</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 3">a</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 4">i</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 5">l</span>-->
-<!--            </label>-->
-<!--        </div>-->
+<body>
 
-<!--        <div id="inContact" class="wave-group">-->
-<!--            <input required="" type="text" class="input">-->
-<!--            <span class="bar"></span>-->
-<!--            <label class="label">-->
-<!--                <span class="label-char" style="&#45;&#45;index: 0">C</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 1">o</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 2">n</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 3">t</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 4">a</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 5">c</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 6">t</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 7">-</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 8">N</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 9">o</span>-->
-<!--            </label>-->
-<!--        </div>-->
 
-<!--        <div id="inNic" class="wave-group">-->
-<!--            <input required="" type="text" class="input">-->
-<!--            <span class="bar"></span>-->
-<!--            <label class="label">-->
-<!--                <span class="label-char" style="&#45;&#45;index: 0">N</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 1">I</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 2">C</span>-->
-<!--            </label>-->
-<!--        </div>-->
+<!-- Left Panel -->
 
-<!--        <div id="inLicense" class="wave-group">-->
-<!--            <input required="" type="text" class="input">-->
-<!--            <span class="bar"></span>-->
-<!--            <label class="label">-->
-<!--                <span class="label-char" style="&#45;&#45;index: 0">L</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 1">i</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 2">c</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 3">e</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 4">n</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 5">c</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 6">e</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 7">-</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 8">N</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 9">o</span>-->
-<!--            </label>-->
-<!--        </div>-->
+<aside id="left-panel" class="left-panel">
+    <nav class="navbar navbar-expand-sm navbar-default">
 
-<!--        <div id="inUname" class="wave-group">-->
-<!--            <input required="" type="text" class="input">-->
-<!--            <span class="bar"></span>-->
-<!--            <label class="label">-->
-<!--                <span class="label-char" style="&#45;&#45;index: 0">U</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 1">s</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 2">e</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 3">r</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 4">n</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 5">a</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 6">m</span>-->
-<!--                <span class="label-char" style="&#45;&#45;index: 7">e</span>-->
-<!--            </label>-->
-<!--        </div>-->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./"><h1>Easy Car Rental</h1></a>
+        </div>
 
-<!--            <div id="inDate" class="wave-group date-picker">-->
-<!--                &lt;!&ndash;            <label for="dateofbirth">Date Of Birth</label>&ndash;&gt;-->
-<!--                <label class="label">-->
-<!--                </label>-->
-<!--                <input type="text" id="datepicker" placeholder="Select a date">-->
-<!--                <div class="calendar" id="calendar"></div>-->
-<!--            </div>-->
-<!--    </div>-->
-<!--    </div>-->
-<!--    </div>-->
+        <div id="main-menu" class="main-menu collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+</aside><!-- /#left-panel -->
 
-<!--    <button id="cancelBtn"> <span>Cancel ×</span>-->
-<!--    </button>-->
-<!--    <button id="nextBtn"> <span>Select Car →</span>-->
-<!--    </button>-->
-<!--    -->
-<!--    <div>-->
-<!--        <img id="add1" src="../images/Cars/ad1.png">-->
-<!--    </div>-->
-<!--    <div>-->
-<!--        <img id="add2" src="../images/Cars/add2.png">-->
-<!--    </div>-->
+<!-- Left Panel -->
 
-<!--</main>-->
-<!--&lt;!&ndash; Footer&ndash;&gt;-->
-<!--<footer class="bg-dark py-4 mt-auto">-->
-<!--    <div class="container px-5">-->
-<!--        <div class="row align-items-center text-white justify-content-between flex-column flex-sm-row">-->
-<!--            <div class="col-auto"><div class="small m-0">Copyright &copy; Sathin Thenuja 2023</div></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>-->
-<!--&lt;!&ndash; Bootstrap core JS&ndash;&gt;-->
-<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>-->
-<!--&lt;!&ndash; Core theme JS&ndash;&gt;-->
-<!--<script src="js/scripts.js"></script>-->
-<!--<script>-->
-<!--    const datePicker = document.getElementById("datepicker");-->
-<!--    const calendar = document.getElementById("calendar");-->
+<!-- Right Panel -->
 
-<!--    // Function to toggle the visibility of the calendar-->
-<!--    function toggleCalendar() {-->
-<!--        if (calendar.style.display === "block") {-->
-<!--            calendar.style.display = "none";-->
-<!--        } else {-->
-<!--            calendar.style.display = "block";-->
-<!--        }-->
-<!--    }-->
+<div id="right-panel" class="right-panel bg-gradient-primary-to-secondary">
 
-<!--    // Function to populate the calendar with days-->
-<!--    function populateCalendar() {-->
-<!--        const today = new Date();-->
-<!--        const year = today.getFullYear();-->
-<!--        const month = today.getMonth();-->
-<!--        const lastDay = new Date(year, month + 1, 0).getDate();-->
-<!--        const firstDayIndex = new Date(year, month, 1).getDay();-->
+    <div class="breadcrumbs bg-dark">
+        <div class="col-sm-4">
+            <div class="page-header float-left bg-dark">
+                <div class="page-title bg-dark">
+                    <h1 class="text-white">Start Rent</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!--        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];-->
+    <div class="Timecard">
+        <p class="time-text" id="time">
+            <span></span>
+            <span class="time-sub-text"></span>
+        </p>
+        <p class="day-text" id="date"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" stroke-width="0" fill="currentColor" stroke="currentColor" class="moon">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.160a.787.787 0 0 1 .810.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124 .060A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863 .099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863 .1z"></path>
+        </svg>
+    </div>
 
-<!--        const calendarHeader = `<tr><th colspan="7">${months[month]} ${year}</th></tr>`;-->
-<!--        const dayLabels = `<tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>`;-->
+    <form id="CarRegistrationForm" enctype="multipart/form-data" role="form">
 
-<!--        let days = "";-->
+        <div class="background">
+            <div class="inputs">
 
-<!--        for (let x = 0; x < firstDayIndex; x++) {-->
-<!--            days += `<td></td>`;-->
-<!--        }-->
+                <div id="inCarId" class="wave-group">
+                    <input required="" type="text" class="input" name="CarId" id="idCarId">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">C</span>
+                        <span class="label-char" style="--index: 1">a</span>
+                        <span class="label-char" style="--index: 2">r</span>
+                        <span class="label-char" style="--index: 3">-</span>
+                        <span class="label-char" style="--index: 4">I</span>
+                        <span class="label-char" style="--index: 5">D</span>
+                    </label>
+                </div>
 
-<!--        for (let i = 1; i <= lastDay; i++) {-->
-<!--            if (i === today.getDate()) {-->
-<!--                days += `<td class="today">${i}</td>`;-->
-<!--            } else {-->
-<!--                days += `<td>${i}</td>`;-->
-<!--            }-->
+                <div id="inRegNo" class="wave-group">
+                    <input required="" type="text" class="input" name="CarRegNo" id="idCarRegNo">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">R</span>
+                        <span class="label-char" style="--index: 1">e</span>
+                        <span class="label-char" style="--index: 2">g</span>
+                        <span class="label-char" style="--index: 3">-</span>
+                        <span class="label-char" style="--index: 4">N</span>
+                        <span class="label-char" style="--index: 5">o</span>
+                    </label>
+                </div>
 
-<!--            if ((i + firstDayIndex) % 7 === 0) {-->
-<!--                days += `</tr><tr>`;-->
-<!--            }-->
-<!--        }-->
+                <div id="inBrand" class="wave-group">
+                    <input required="" type="text" class="input" name="CarBrand" id="idCarBrand">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">B</span>
+                        <span class="label-char" style="--index: 1">r</span>
+                        <span class="label-char" style="--index: 2">a</span>
+                        <span class="label-char" style="--index: 3">n</span>
+                        <span class="label-char" style="--index: 4">d</span>
+                    </label>
+                </div>
 
-<!--        calendar.innerHTML = `<table>${calendarHeader}${dayLabels}${days}</table>`;-->
-<!--    }-->
+                <div id="inType" class="wave-group">
+                    <input required="" type="text" class="input" name="CarType" id="idCarType">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">T</span>
+                        <span class="label-char" style="--index: 1">y</span>
+                        <span class="label-char" style="--index: 2">p</span>
+                        <span class="label-char" style="--index: 3">e</span>
+                    </label>
+                </div>
 
-<!--    // Event listener to show/hide the calendar-->
-<!--    datePicker.addEventListener("click", toggleCalendar);-->
+                <div id="inPassenger" class="wave-group">
+                    <input required="" type="text" class="input" name="CarNoOfPassengers" id="idCarNoOfPassengers">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">N</span>
+                        <span class="label-char" style="--index: 1">o</span>
+                        <span class="label-char" style="--index: 2">-</span>
+                        <span class="label-char" style="--index: 3">O</span>
+                        <span class="label-char" style="--index: 4">f</span>
+                        <span class="label-char" style="--index: 5">-</span>
+                        <span class="label-char" style="--index: 6">P</span>
+                        <span class="label-char" style="--index: 7">a</span>
+                        <span class="label-char" style="--index: 8">s</span>
+                        <span class="label-char" style="--index: 9">s</span>
+                        <span class="label-char" style="--index: 10">e</span>
+                        <span class="label-char" style="--index: 11">n</span>
+                        <span class="label-char" style="--index: 12">g</span>
+                        <span class="label-char" style="--index: 13">e</span>
+                        <span class="label-char" style="--index: 14">r</span>
+                        <span class="label-char" style="--index: 15">s</span>
+                    </label>
+                </div>
 
-<!--    // Event listener to populate the calendar and hide it initially-->
-<!--    document.addEventListener("DOMContentLoaded", () => {-->
-<!--        populateCalendar();-->
-<!--        calendar.style.display = "none";-->
-<!--    });-->
+                <div id="inColor" class="wave-group">
+                    <input required="" type="text" class="input" name="CarColor" id="idCarColor">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">C</span>
+                        <span class="label-char" style="--index: 1">o</span>
+                        <span class="label-char" style="--index: 2">l</span>
+                        <span class="label-char" style="--index: 3">o</span>
+                        <span class="label-char" style="--index: 4">u</span>
+                        <span class="label-char" style="--index: 5">r</span>
+                    </label>
+                </div>
 
-<!--    // Event listener to select a date from the calendar-->
-<!--    calendar.addEventListener("click", (e) => {-->
-<!--        if (e.target.tagName === "TD" && !e.target.classList.contains("today")) {-->
-<!--            const selectedDate = e.target.textContent;-->
-<!--            const selectedMonth = new Date().getMonth() + 1;-->
-<!--            const selectedYear = new Date().getFullYear();-->
-<!--            datePicker.value = `${selectedMonth}/${selectedDate}/${selectedYear}`;-->
-<!--            calendar.style.display = "none";-->
-<!--        }-->
-<!--    });-->
+                <div id="inTransmission" class="wave-group">
+                    <input required="" type="text" class="input" name="CarTransmission" id="idCarTransmission">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">T</span>
+                        <span class="label-char" style="--index: 1">r</span>
+                        <span class="label-char" style="--index: 2">a</span>
+                        <span class="label-char" style="--index: 3">n</span>
+                        <span class="label-char" style="--index: 4">s</span>
+                        <span class="label-char" style="--index: 5">m</span>
+                        <span class="label-char" style="--index: 6">i</span>
+                        <span class="label-char" style="--index: 7">s</span>
+                        <span class="label-char" style="--index: 8">s</span>
+                        <span class="label-char" style="--index: 9">i</span>
+                        <span class="label-char" style="--index: 10">o</span>
+                        <span class="label-char" style="--index: 11">n</span>
+                    </label>
+                </div>
 
-<!--</script>-->
-<!--</body>-->
-<!--</html>-->
+                <div id="inFuel" class="wave-group">
+                    <input required="" type="input" class="input" name="CarFuel" id="idCarFuel">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">F</span>
+                        <span class="label-char" style="--index: 1">u</span>
+                        <span class="label-char" style="--index: 2">e</span>
+                        <span class="label-char" style="--index: 3">l</span>
+                    </label>
+                </div>
+
+                <div id="inDailyR" class="wave-group">
+                    <input required="" type="input" class="input" name="CarDailyRate" id="idCarDailyRate">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">D</span>
+                        <span class="label-char" style="--index: 1">a</span>
+                        <span class="label-char" style="--index: 2">i</span>
+                        <span class="label-char" style="--index: 3">l</span>
+                        <span class="label-char" style="--index: 4">y</span>
+                        <span class="label-char" style="--index: 5">-</span>
+                        <span class="label-char" style="--index: 6">R</span>
+                        <span class="label-char" style="--index: 7">a</span>
+                        <span class="label-char" style="--index: 8">t</span>
+                        <span class="label-char" style="--index: 9">e</span>
+                    </label>
+                </div>
+
+                <div id="inMonthlyR" class="wave-group">
+                    <input required="" type="input" class="input" name="CarMonthlyRate" id="idCarMonthlyRate">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">M</span>
+                        <span class="label-char" style="--index: 1">o</span>
+                        <span class="label-char" style="--index: 2">n</span>
+                        <span class="label-char" style="--index: 3">t</span>
+                        <span class="label-char" style="--index: 4">h</span>
+                        <span class="label-char" style="--index: 5">l</span>
+                        <span class="label-char" style="--index: 6">y</span>
+                        <span class="label-char" style="--index: 7">-</span>
+                        <span class="label-char" style="--index: 8">R</span>
+                        <span class="label-char" style="--index: 9">a</span>
+                        <span class="label-char" style="--index: 10">t</span>
+                        <span class="label-char" style="--index: 11">e</span>
+                    </label>
+                </div>
+
+                <div id="inExKmP" class="wave-group">
+                    <input required="" type="input" class="input" name="CarExKmPrice" id="idCarExKmPrice">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">P</span>
+                        <span class="label-char" style="--index: 1">r</span>
+                        <span class="label-char" style="--index: 2">i</span>
+                        <span class="label-char" style="--index: 3">c</span>
+                        <span class="label-char" style="--index: 4">e</span>
+                        <span class="label-char" style="--index: 5">-</span>
+                        <span class="label-char" style="--index: 6">F</span>
+                        <span class="label-char" style="--index: 7">o</span>
+                        <span class="label-char" style="--index: 8">r</span>
+                        <span class="label-char" style="--index: 9">-</span>
+                        <span class="label-char" style="--index: 10">E</span>
+                        <span class="label-char" style="--index: 11">x</span>
+                        <span class="label-char" style="--index: 12">t</span>
+                        <span class="label-char" style="--index: 13">r</span>
+                        <span class="label-char" style="--index: 14">a</span>
+                        <span class="label-char" style="--index: 15">-</span>
+                        <span class="label-char" style="--index: 16">K</span>
+                        <span class="label-char" style="--index: 17">m</span>
+                    </label>
+                </div>
+
+                <div id="inCurrentMilage" class="wave-group">
+                    <input required="" type="input" class="input" name="CarCurrentMilage" id="CarCurrentMilage">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">C</span>
+                        <span class="label-char" style="--index: 1">u</span>
+                        <span class="label-char" style="--index: 2">r</span>
+                        <span class="label-char" style="--index: 3">r</span>
+                        <span class="label-char" style="--index: 4">e</span>
+                        <span class="label-char" style="--index: 5">n</span>
+                        <span class="label-char" style="--index: 6">t</span>
+                        <span class="label-char" style="--index: 7">-</span>
+                        <span class="label-char" style="--index: 8">M</span>
+                        <span class="label-char" style="--index: 9">i</span>
+                        <span class="label-char" style="--index: 10">l</span>
+                        <span class="label-char" style="--index: 11">a</span>
+                        <span class="label-char" style="--index: 12">g</span>
+                        <span class="label-char" style="--index: 13">e</span>
+                    </label>
+                </div>
+
+                <div id="inDailyFreeMilage" class="wave-group">
+                    <input required="" type="input" class="input" name="CarDailyFree" id="idCarDailyFree">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">D</span>
+                        <span class="label-char" style="--index: 1">a</span>
+                        <span class="label-char" style="--index: 2">i</span>
+                        <span class="label-char" style="--index: 3">l</span>
+                        <span class="label-char" style="--index: 4">y</span>
+                        <span class="label-char" style="--index: 5">-</span>
+                        <span class="label-char" style="--index: 6">F</span>
+                        <span class="label-char" style="--index: 7">r</span>
+                        <span class="label-char" style="--index: 8">e</span>
+                        <span class="label-char" style="--index: 9">e</span>
+                        <span class="label-char" style="--index: 10">-</span>
+                        <span class="label-char" style="--index: 11">M</span>
+                        <span class="label-char" style="--index: 12">i</span>
+                        <span class="label-char" style="--index: 13">l</span>
+                        <span class="label-char" style="--index: 14">a</span>
+                        <span class="label-char" style="--index: 15">g</span>
+                        <span class="label-char" style="--index: 16">e</span>
+                    </label>
+                </div>
+
+                <div id="inMonthlyFreeMilage" class="wave-group">
+                    <input required="" type="input" class="input" name="CarMonthlyFreeMilage" id="idCarMonthlyFreeMilage">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">M</span>
+                        <span class="label-char" style="--index: 1">o</span>
+                        <span class="label-char" style="--index: 2">n</span>
+                        <span class="label-char" style="--index: 3">t</span>
+                        <span class="label-char" style="--index: 4">h</span>
+                        <span class="label-char" style="--index: 5">l</span>
+                        <span class="label-char" style="--index: 6">y</span>
+                        <span class="label-char" style="--index: 7">-</span>
+                        <span class="label-char" style="--index: 8">F</span>
+                        <span class="label-char" style="--index: 9">r</span>
+                        <span class="label-char" style="--index: 10">e</span>
+                        <span class="label-char" style="--index: 11">e</span>
+                        <span class="label-char" style="--index: 12">-</span>
+                        <span class="label-char" style="--index: 13">M</span>
+                        <span class="label-char" style="--index: 14">i</span>
+                        <span class="label-char" style="--index: 15">l</span>
+                        <span class="label-char" style="--index: 16">a</span>
+                        <span class="label-char" style="--index: 17">g</span>
+                        <span class="label-char" style="--index: 18">e</span>
+                    </label>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <button id="CarsaveBtn" type="button"> <span>Save ✔</span>
+        </button>
+        <button id="CardeleteBtn" type="button"> <span>Delete ×</span>
+        </button>
+        <button id="CarupdateBtn" type="button"> <span>Update ↻</span>
+        </button>
+        <button id="CarTableBtn" type="button"> <span>Table Refresh ▼</span>
+        </button>
+
+    </form>
+
+    <!--        TABLE-->
+    <section class="intro">
+        <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="card mask-custom">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless text-white mb-0">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Car ID</th>
+                                            <th scope="col">Reg No.</th>
+                                            <th scope="col">Brand</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Passenger Count</th>
+                                            <th scope="col">Colour</th>
+                                            <th scope="col">Trans.</th>
+                                            <th scope="col">Fuel</th>
+                                            <th scope="col">Current Mil.</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="CarTable">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="slide">
+        <img src="../images/Cars/slide/Frame%201.jpg" alt="Image 1">
+        <img src="../images/Cars/slide/Frame%202.jpg" alt="Image 2">
+        <img src="../images/Cars/slide/Frame%203.jpg" alt="Image 3">
+        <img src="../images/Cars/slide/Frame%204.jpg" alt="Image 4">
+        <img src="../images/Cars/slide/Frame%205.jpg" alt="Image 5">
+        <img src="../images/Cars/slide/Frame%206.jpg" alt="Image 6">
+    </div><!-- .content -->
+</div><!-- /#right-panel -->
+
+<!-- Right Panel -->
+
+<script src="vendors/jquery/dist/jquery.min.js"></script>
+<script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
+
+<script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+<script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+<script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+<script>
+</script>
+<script>
+    function updateTimeAndDate() {
+        const timeElement = document.getElementById("time").querySelector("span");
+        const timeSubTextElement = document.querySelector(".time-sub-text");
+        const dateElement = document.getElementById("date");
+
+        const now = new Date();
+        let hours = now.getHours();
+        const minutes = now.getMinutes();
+        const ampm = hours >= 12 ? "PM" : "AM";
+
+        // Convert to 12-hour format
+        if (hours > 12) {
+            hours -= 12;
+        } else if (hours === 0) {
+            hours = 12;
+        }
+
+        const timeText = `${hours}:${String(minutes).padStart(2, "0")}`;
+
+        const day = now.toLocaleDateString("en-US", { weekday: "long" });
+        const month = now.toLocaleDateString("en-US", { month: "long" });
+        const date = now.getDate();
+        const year = now.getFullYear();
+
+        timeElement.textContent = timeText;
+        timeSubTextElement.textContent = ampm;
+        dateElement.textContent = `${day}, ${month} ${date}th, ${year}`;
+    }
+
+    updateTimeAndDate();
+    setInterval(updateTimeAndDate, 1000); // Update every second
+</script>
+
+<!--slide-->
+<script>
+    const images = document.querySelectorAll('#slide img');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            if (i === index) {
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        });
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    // Initially, show the first image
+    showImage(currentIndex);
+
+    // Automatically advance to the next image every few seconds
+    setInterval(nextImage, 3000); // Change image every 3 seconds
+</script>
+<script src="../../controllers/carController.js"></script>
+
+</body>
+
+</html>

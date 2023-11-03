@@ -84,3 +84,43 @@ $("#DriversaveBtn").click(function () {
         }
     });
 });
+
+
+
+
+// Customer Delet
+let id = $("#DriverdeleteBtn").val();
+
+let consent = confirm("Do you want to delete.?");
+if (consent) {
+    let response = (id);
+    if (response) {
+        alert("Driver Deleted");
+        clearDriverInputFields();
+        getAllDrivers();
+    } else {
+        alert("Driver Not Removed..!");
+    }
+}
+
+
+
+function deleteDriver(id) {
+    $.ajax({
+        url:'driver?driverId=' + id,
+        method: 'delete',
+        headers:{
+            Auth:"user=admin,pass=admin"
+        },
+        success: function (resp) {
+            alert(resp.message);
+            getAllDrivers();
+            clearDriverInputFields()
+            return true;
+        },
+        error: function (error) {
+            alert(error.responseJSON.message);
+            return false;
+        }
+    });
+}
