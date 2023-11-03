@@ -129,7 +129,7 @@
             <div class="inputs">
 
                 <div id="inCarId" class="wave-group">
-                    <input required="" type="text" class="input" name="CarId">
+                    <input required="" type="text" class="input" name="CarId" id="CarId">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">C</span>
@@ -142,7 +142,7 @@
                 </div>
 
                 <div id="inRegNo" class="wave-group">
-                    <input required="" type="text" class="input" name="CarRegNo">
+                    <input required="" type="text" class="input" name="CarRegNo" id="CarRegNo">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">R</span>
@@ -155,7 +155,7 @@
                 </div>
 
                 <div id="inBrand" class="wave-group">
-                    <input required="" type="text" class="input" name="CarBrand">
+                    <input required="" type="text" class="input" name="CarBrand" id="CarBrand">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">B</span>
@@ -167,7 +167,7 @@
                 </div>
 
                 <div id="inType" class="wave-group">
-                    <input required="" type="text" class="input" name="CarType">
+                    <input required="" type="text" class="input" name="CarType" id="CarType">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">T</span>
@@ -178,7 +178,7 @@
                 </div>
 
                 <div id="inPassenger" class="wave-group">
-                    <input required="" type="text" class="input" name="CarNoOfPassengers">
+                    <input required="" type="text" class="input" name="CarNoOfPassengers" id="CarNoOfPassengers">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">N</span>
@@ -201,7 +201,7 @@
                 </div>
 
                 <div id="inColor" class="wave-group">
-                    <input required="" type="text" class="input" name="CarColor">
+                    <input required="" type="text" class="input" name="CarColor" id="CarColor">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">C</span>
@@ -214,7 +214,7 @@
                 </div>
 
                 <div id="inTransmission" class="wave-group">
-                    <input required="" type="text" class="input" name="CarTransmission">
+                    <input required="" type="text" class="input" name="CarTransmission" id="CarTransmission">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">T</span>
@@ -233,7 +233,7 @@
                 </div>
 
                 <div id="inFuel" class="wave-group">
-                    <input required="" type="input" class="input" name="CarFuel">
+                    <input required="" type="input" class="input" name="CarFuel" id="CarFuel">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">F</span>
@@ -305,7 +305,7 @@
                 </div>
 
                 <div id="inCurrentMilage" class="wave-group">
-                    <input required="" type="input" class="input" name="CarCurrentMilage">
+                    <input required="" type="input" class="input" name="CarCurrentMilage" id="CarCurrentMilage">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">C</span>
@@ -408,7 +408,7 @@
         </button>
         <button id="CarupdateBtn" type="button"> <span>Update ↻</span>
         </button>
-        <button id="CarclearBtn" type="button"> <span>Clear ×</span>
+        <button id="CarTableBtn" type="button"> <span>Table Refresh ▼</span>
         </button>
 
     </form>
@@ -425,47 +425,19 @@
                                         <table class="table table-borderless text-white mb-0">
                                             <thead>
                                             <tr>
-                                                <th scope="col">EMPLOYEES</th>
-                                                <th scope="col">POSITION</th>
-                                                <th scope="col">CONTACTS</th>
-                                                <th scope="col">AGE</th>
-                                                <th scope="col">ADDRESS</th>
-                                                <th scope="col">SALARY</th>
+                                                <th scope="col">Car ID</th>
+                                                <th scope="col">Reg No.</th>
+                                                <th scope="col">Brand</th>
+                                                <th scope="col">Type</th>
+                                                <th scope="col">Passenger Count</th>
+                                                <th scope="col">Colour</th>
+                                                <th scope="col">Trans.</th>
+                                                <th scope="col">Fuel</th>
+                                                <th scope="col">Current Mil.</th>
                                             </tr>
                                             </thead>
-                                            <tbody>
-                                            <tr>
-                                                <th scope="row">Tiger Nixon</th>
-                                                <td>System Architect</td>
-                                                <td>tnixon12@example.com</td>
-                                                <td>61</td>
-                                                <td>Edinburgh</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Sonya Frost</th>
-                                                <td>Software Engineer</td>
-                                                <td>sfrost34@example.com</td>
-                                                <td>23</td>
-                                                <td>Edinburgh</td>
-                                                <td>$103,600</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Tiger Nixon</th>
-                                                <td>System Architect</td>
-                                                <td>tnixon12@example.com</td>
-                                                <td>61</td>
-                                                <td>Edinburgh</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Sonya Frost</th>
-                                                <td>Software Engineer</td>
-                                                <td>sfrost34@example.com</td>
-                                                <td>23</td>
-                                                <td>Edinburgh</td>
-                                                <td>$103,600</td>
-                                            </tr>
+                                            <tbody id="CarTable">
+
                                             </tbody>
                                         </table>
                                     </div>

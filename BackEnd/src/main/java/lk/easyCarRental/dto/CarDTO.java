@@ -25,9 +25,9 @@ public class CarDTO {
     private String CarExKmPrice;
     private String CarCurrentMilage;
     private String CarDailyFree;
-    private String dailyPrice;
     private String CarMonthlyFreeMilage;
-    private String monthlyFreeMilagePrice;
+//    private String CarMonthlyFreeMilage;
+//    private String monthlyFreeMilagePrice;
     private MultipartFile CarImageFront;
     private MultipartFile CarImageBack;
     private MultipartFile CarImageSide;

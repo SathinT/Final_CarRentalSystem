@@ -269,7 +269,7 @@ button:hover::before {
     top: -224px;
     width: 150px;
 }
-#CarclearBtn{
+#CarTableBtn{
     cursor: pointer;
     border: none;
     padding: 0.9rem 2rem;
@@ -287,7 +287,7 @@ button:hover::before {
     color: ghostwhite;
     left: 472px;
     top: -224px;
-    width: 150px;
+    width: 213px;
 }
 
 /*date*/

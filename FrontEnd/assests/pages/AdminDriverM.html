@@ -129,7 +129,7 @@
             <div class="inputs">
 
                 <div id="inDId" class="wave-group">
-                    <input required="" type="text" class="input" name="driverId">
+                    <input required="" type="text" class="input" name="driverId" id="driverId">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">D</span>
@@ -145,7 +145,7 @@
                 </div>
 
                 <div id="inDLicenNo" class="wave-group">
-                    <input required="" type="text" class="input" name="driverLicenNo">
+                    <input required="" type="text" class="input" name="driverLicenNo" id="driverLicenNo">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">D</span>
@@ -168,7 +168,7 @@
                 </div>
 
                 <div id="inDName" class="wave-group">
-                    <input required="" type="text" class="input" name="driverName">
+                    <input required="" type="text" class="input" name="driverName" id="driverName">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">N</span>
@@ -179,7 +179,7 @@
                 </div>
 
                 <div id="inDEmail" class="wave-group">
-                    <input required="" type="text" class="input" name="driverEmail">
+                    <input required="" type="text" class="input" name="driverEmail" id="driverEmail">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">E</span>
@@ -192,7 +192,7 @@
                 </div>
 
                 <div id="inDContact" class="wave-group">
-                    <input required="" type="text" class="input" name="driverContactNo">
+                    <input required="" type="text" class="input" name="driverContactNo" id="driverContactNo">
                     <span class="bar"></span>
                     <label class="label">
                         <span class="label-char" style="--index: 0">C</span>
@@ -261,7 +261,7 @@
         </button>
         <button id="DriverupdateBtn" type="button"> <span>Update ↻</span>
         </button>
-        <button id="DriverRefreshTable" type="button"> <span>Refresh Table ▼</span>
+        <button id="DriverGetAll" type="button"> <span>Refresh Table ▼</span>
         </button>
 
     </form>
@@ -280,9 +280,9 @@
                                             <tr>
                                                 <th scope="col">Driver ID</th>
                                                 <th scope="col">License No.</th>
-                                                <th scope="col">Contact No.</th>
                                                 <th scope="col">Name</th>
                                                 <th scope="col">Email</th>
+                                                <th scope="col">Contact No.</th>
                                             </tr>
                                             </thead>
                                             <tbody id="DriverTable">

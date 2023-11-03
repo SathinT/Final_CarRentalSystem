@@ -7,7 +7,7 @@ $("#CustomerGetAll").click(function () {
 
 //get all customer funtion
 function getAllCustomers() {
-    //clear all tbody data before add
+
     $("#CustomerTable").empty();
 
     $.ajax({
@@ -20,6 +20,7 @@ function getAllCustomers() {
             let customers = response.data;
             for (let i in customers) {
                 let cus = customers[i];
+
                 let customerId = cus.customerId;
                 let name = cus.name;
                 let address = cus.address;
@@ -27,18 +28,16 @@ function getAllCustomers() {
                 let email = cus.email;
                 let nicNo = cus.nicNo;
                 let licenNo = cus.licenNo;
+
                 let row = `<tr><td>${customerId}</td><td>${name}</td><td>${address}</td><td>${contactNo}</td><td>${email}</td><td>${nicNo}</td><td>${licenNo}</td></tr>`;
                 $("#CustomerTable").append(row);
             }
-            // bindTrEvents();
         },
         error: function (error) {
             alert(error.responseJSON.message);
         }
     });
 }
-
-
 
 
 // customer Save

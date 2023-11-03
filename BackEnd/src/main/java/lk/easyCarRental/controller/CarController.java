@@ -17,7 +17,8 @@ public class CarController {
 
     @GetMapping
     public ResponseUtil getCar(){
-        return new ResponseUtil("OK","Car Added Successfully",null);
+
+        return new ResponseUtil("OK","Car Added Successfully",carService.getAllCars());
     }
     @PostMapping
     public ResponseUtil addCar(@ModelAttribute CarDTO carDTO, @ModelAttribute UserDTO userDTO){

@@ -1,14 +1,36 @@
 // let baseUrl :string = "http://localhost:8080/BackEnd_war";
 
+//bind tr events for getting back data of the rows to text fields
+function bindTrEventsDriver() {
+    $('#DriverTable>tr').click(function () {
+        //get the selected rows data
+        let driverId = $(this).children().eq(0).text();
+        let driverLicenNo = $(this).children().eq(1).text();
+        let driverName = $(this).children().eq(2).text();
+        let driverEmail = $(this).children().eq(3).text();
+        let driverContactNo = $(this).children().eq(4).text();
+
+        //set the selected rows data to the input fields
+        $("#driverId").val(driverId);
+        $("#driverLicenNo").val(driverLicenNo);
+        $("#driverName").val(driverName);
+        $("#driverEmail").val(driverEmail);
+        $("#driverContactNo").val(driverContactNo);
+
+
+    })
+}
+
+
 // Driver Get All
-$("#DriverRefreshTable").click(function () {
+$("#DriverGetAll").click(function () {
     getAllDrivers();
 });
 
 //get all customer funtion
 function getAllDrivers() {
-    //clear all tbody data before add
-    $("#CustomerTable").empty();
+
+    $("#DriverTable").empty();
 
     $.ajax({
         url: 'http://localhost:8080/BackEnd_war/driver',
@@ -19,18 +41,18 @@ function getAllDrivers() {
         success: function (response) {
             let drivers = response.data;
             for (let i in drivers) {
-                let dri = drivers[i];
+                let driver = drivers[i];
 
-                let driverId = dri.driverId;
-                let licenNo = dri.licenNo;
-                let contactNo = dri.contactNo;
-                let name = dri.name;
-                let email = dri.email;
+                let driverId = driver.driverId;
+                let driverLicenNo = driver.driverLicenNo;
+                let driverName = driver.driverName;
+                let driverEmail = driver.driverEmail;
+                let driverContactNo = driver.driverContactNo;
 
-                let row = `<tr><td>${driverId}</td><td>${licenNo}</td><td>${contactNo}</td><td>${name}</td><td>${email}</td></tr>`;
-                $("#CustomerTable").append(row);
+                let row = `<tr><td>${driverId}</td><td>${driverLicenNo}</td><td>${driverName}</td><td>${driverEmail}</td><td>${driverContactNo}</td></tr>`;
+                $("#DriverTable").append(row);
             }
-            // bindTrEvents();
+            bindTrEventsDriver();
         },
         error: function (error) {
             alert(error.responseJSON.message);
@@ -42,7 +64,7 @@ function getAllDrivers() {
 
 $("#DriversaveBtn").click(function () {
     var formData = new FormData($("#DriverRegistrationForm")[0]);
-    console.log(formData)
+
 
     $.ajax({
         url: "http://localhost:8080/BackEnd_war/driver",

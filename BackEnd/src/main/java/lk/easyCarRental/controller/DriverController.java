@@ -17,7 +17,8 @@ public class DriverController {
 
     @GetMapping
     public ResponseUtil getDriver(){
-        return new ResponseUtil("OK","Driver Successfully Added",null);
+
+        return new ResponseUtil("OK","Driver Successfully Loaded",driverService.getAllDrivers());
     }
 
     @PostMapping

@@ -16,7 +16,7 @@ public class CustomerController {
 
     @GetMapping
     public ResponseUtil getCustomer(){
-        return new ResponseUtil("Ok","Successfully Loaded",customerService.getAllCustomer());
+        return new ResponseUtil("Ok","Customer Successfully Loaded",customerService.getAllCustomer());
     }
 
     @PostMapping

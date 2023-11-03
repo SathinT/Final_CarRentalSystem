@@ -28,9 +28,9 @@ public class Car {
     String CarExKmPrice;
     String CarCurrentMilage;
     String CarDailyFree;
-    String dailyPrice;
     String CarMonthlyFreeMilage;
-    String monthlyFreeMilagePrice;
+//    String CarMonthlyFreeMilage;
+//    String monthlyFreeMilagePrice;
     String CarImageFront;
     String CarImageBack;
     String CarImageSide;
