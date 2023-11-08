@@ -1,7 +1,7 @@
 package lk.easyCarRental.repo;
 
 import lk.easyCarRental.entity.Customer;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface CustomerRepo extends JpaRepository<Customer, String> {
+public interface CustomerRepo extends CrudRepository<Customer, String> {
 }

@@ -17,6 +17,7 @@ public class CarController {
 
     @GetMapping
     public ResponseUtil getCar(){
+        System.out.println(carService.getAllCars());
 
         return new ResponseUtil("OK","Car Added Successfully",carService.getAllCars());
     }

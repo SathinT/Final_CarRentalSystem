@@ -31,9 +31,13 @@ public class DriverController {
         return new ResponseUtil("OK","Successfully Driver Registered!", null );
     }
 
-//    @DeleteMapping(params = {"driverId"})
-//    public ResponseUtil deleteDriver(String driverId){
-//        driverService.deleteDriver(driverId);
-//        return new ResponseUtil("Ok","Successfully Deleted",driverId);
-//    }
+
+
+    @DeleteMapping(params = {"driverId"})
+    public ResponseUtil deleteDriver(@RequestParam String driverId) {
+        System.out.println(driverId);
+        driverService.deleteDriver(driverId);
+        return new ResponseUtil("Ok","Deleted",driverId);
+    }
+
 }

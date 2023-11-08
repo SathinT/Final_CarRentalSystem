@@ -8,6 +8,6 @@ public interface DriverService {
     ArrayList<DriverDTO> getAllDrivers();
 
     void saveDriver(DriverDTO driverDTO);
-    void deleteDriver(String driverId, DriverDTO driverDTO);
+    void deleteDriver(String driverId);
     void updateDriver(DriverDTO driverDTO);
 }

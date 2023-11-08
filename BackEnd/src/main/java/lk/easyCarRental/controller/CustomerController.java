@@ -2,6 +2,7 @@ package lk.easyCarRental.controller;
 
 import lk.easyCarRental.service.CustomerService;
 import lk.easyCarRental.util.ResponseUtil;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import lk.easyCarRental.dto.CustomerDTO;
@@ -10,9 +11,10 @@ import lk.easyCarRental.dto.UserDTO;
 @RestController
 @RequestMapping("/customer")
 @CrossOrigin
+@RequiredArgsConstructor
 public class CustomerController {
-    @Autowired
-    CustomerService customerService;
+
+    private final CustomerService customerService;
 
     @GetMapping
     public ResponseUtil getCustomer(){
@@ -28,18 +30,6 @@ public class CustomerController {
         customerService.saveCustomer(customerDTO);
         return new ResponseUtil("OK", "Successfully Customer Registered!", null);
     }
-
-    @DeleteMapping("/customers/{customerId}")
-    public ResponseUtil deleteCustomer(@PathVariable String customerId) {
-        // Check if the customer exists
-        if (customerService.customerExists(customerId)) {
-            customerService.deleteCustomer(customerId); // Assuming you have a method for deleting a customer by customerId
-            return new ResponseUtil("OK", "Customer deleted successfully", null);
-        } else {
-            return new ResponseUtil("Error", "Customer not found", null);
-        }
-    }
-
 
 
 }

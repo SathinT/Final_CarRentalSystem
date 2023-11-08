@@ -89,25 +89,28 @@ $("#DriversaveBtn").click(function () {
 
 
 // Customer Delet
-let id = $("#DriverdeleteBtn").val();
+$("#DriverdeleteBtn").click(function () {
+    let id = $("#driverId").val();
+    deleteDriver(id);
 
-let consent = confirm("Do you want to delete.?");
-if (consent) {
-    let response = (id);
-    if (response) {
-        alert("Driver Deleted");
-        clearDriverInputFields();
-        getAllDrivers();
-    } else {
-        alert("Driver Not Removed..!");
+    let consent = confirm("Do you want to delete.?");
+    if (consent) {
+        let response = (id);
+        if (response) {
+            alert("Driver Deleted");
+            clearDriverInputFields();
+            getAllDrivers();
+        } else {
+            alert("Driver Not Removed..!");
+        }
     }
-}
+});
 
 
 
 function deleteDriver(id) {
     $.ajax({
-        url:'driver?driverId=' + id,
+        url:'http://localhost:8080/BackEnd_war/driver?driverId=' + id,
         method: 'delete',
         headers:{
             Auth:"user=admin,pass=admin"

@@ -94,11 +94,8 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void deleteCustomer(String customerId) {
-            if (!customerRepo.existsById(customerId)) {
-                throw new RuntimeException(customerId+ " Customer is not available, please check the ID before delete.!");
-            }
-            customerRepo.deleteById(customerId);
-        }
+
+    }
 
     @Override
     public void updateCustomer(CustomerDTO customerDTO) {

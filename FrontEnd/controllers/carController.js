@@ -14,15 +14,15 @@ function bindTrEventsCar() {
         let CarCurrentMilage = $(this).children().eq(8).text();
 
         //set the selected rows data to the input fields
-        $("#CarId").val(CarId);
-        $("#CarRegNo").val(CarRegNo);
-        $("#CarBrand").val(CarBrand);
-        $("#CarType").val(CarType);
-        $("#CarNoOfPassengers").val(CarNoOfPassengers);
-        $("#CarColor").val(CarColor);
-        $("#CarTransmission").val(CarTransmission);
-        $("#CarFuel").val(CarFuel);
-        $("#CarCurrentMilage").val(CarCurrentMilage);
+        $("#idCarId").val(CarId);
+        $("#idCarRegNo").val(CarRegNo);
+        $("#idCarBrand").val(CarBrand);
+        $("#idCarType").val(CarType);
+        $("#idCarNoOfPassengers").val(CarNoOfPassengers);
+        $("#idCarColor").val(CarColor);
+        $("#idCarTransmission").val(CarTransmission);
+        $("#idCarFuel").val(CarFuel);
+        $("#idCarCurrentMilage").val(CarCurrentMilage);
 
 
     })
@@ -49,6 +49,7 @@ function getAllCars() {
             for (let i in cars) {
                 let car = cars[i];
 
+
                 let CarId = car.CarId;
                 let CarRegNo = car.CarRegNo;
                 let CarBrand = car.CarBrand;
@@ -58,6 +59,8 @@ function getAllCars() {
                 let CarTransmission = car.CarTransmission;
                 let CarFuel = car.CarFuel;
                 let CarCurrentMilage = car.CarCurrentMilage;
+
+                console.log(CarId);
 
                 let row = `<tr><td>${CarId}</td><td>${CarRegNo}</td><td>${CarBrand}</td><td>${CarType}</td><td>${CarNoOfPassengers}</td><td>${CarColor}</td><td>${CarTransmission}</td><td>${CarFuel}</td><td>${CarCurrentMilage}</td></tr>`;
                 $("#CarTable").append(row);

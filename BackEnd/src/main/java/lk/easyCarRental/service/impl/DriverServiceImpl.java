@@ -7,6 +7,7 @@ import lk.easyCarRental.entity.Driver;
 import lk.easyCarRental.entity.User;
 import lk.easyCarRental.repo.CustomerRepo;
 import lk.easyCarRental.repo.DriverRepo;
+import lk.easyCarRental.repo.UserRepo;
 import lk.easyCarRental.service.DriverService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
@@ -28,6 +29,9 @@ public class DriverServiceImpl implements DriverService {
     DriverRepo driverRepo;
     @Autowired
     ModelMapper modelMapper;
+
+    @Autowired
+    UserRepo userRepo;
 
     @Override
     public ArrayList<DriverDTO> getAllDrivers() {
@@ -84,9 +88,15 @@ public class DriverServiceImpl implements DriverService {
     }
 
     @Override
-    public void deleteDriver(String driverId, DriverDTO driverDTO) {
-
+    public void deleteDriver(String driverId) {
+        driverRepo.findById(driverId);
+        // Check if the driver with the specified ID exists
+        if (!driverRepo.existsById(driverId)) {
+            throw new RuntimeException("Driver with ID " + driverId + " not found");
+        }
+        driverRepo.deleteById(driverId);
     }
+
 
     @Override
     public void updateDriver(DriverDTO driverDTO) {

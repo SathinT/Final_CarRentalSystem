@@ -67,42 +67,17 @@ $("#Register").click(function () {
 
 
 
-// Customer Delet
-let id = $("#customerId").val();
-
-let consent = confirm("Do you want to delete.?");
-if (consent) {
-    let response = deleteCustomer(id);
-    if (response) {
-        alert("Customer Deleted");
-        clearCustomerInputFields();
-        getAllCustomers();
-    } else {
-        alert("Customer Not Removed..!");
-    }
-}
-
-
-
-
-
-
-function deleteCustomer(id) {
-    $.ajax({
-        url:'customer?customerId=' + id,
-        method: 'delete',
-        headers:{
-            Auth:"user=admin,pass=admin"
-        },
-        success: function (resp) {
-            alert(resp.message);
-            getAllCustomers();
-            clearCustomerInputFields()
-            return true;
-        },
-        error: function (error) {
-            alert(error.responseJSON.message);
-            return false;
-        }
-    });
-}
+// // Customer Delet
+// let id = $("#customerId").val();
+//
+// let consent = confirm("Do you want to delete.?");
+// if (consent) {
+//     let response = deleteCustomer(id);
+//     if (response) {
+//         alert("Customer Deleted");
+//         clearCustomerInputFields();
+//         getAllCustomers();
+//     } else {
+//         alert("Customer Not Removed..!");
+//     }
+// }
